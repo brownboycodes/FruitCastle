@@ -10,10 +10,18 @@ setup(
     description="an open source platform to host various API endpoints",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     install_requires=['flask',],
-    license="MIT"
+    license="MIT",
+    url="https://github.com/brownboycodes/common-api-server",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"": "src"},
+    packages= find_packages(where="src"),
+    python_requires=">=3.6",
 )
 
