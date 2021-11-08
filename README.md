@@ -6,6 +6,10 @@ This is an open source application to act as a **common Backend Server** for to 
 
 ## Installation Guidelines
 
+**Execute to the following commands in cmd or bash:**
+
+
+
 Clone the repo to your computer:
 
 ```bash
@@ -36,6 +40,9 @@ install packages 📦 required by the flask app 🐍:
 pip install -r requirements.txt 
 ```
 
+🎉 start the server 🚀:
 
+```bash
+py run_app.py
+```
 
- 
