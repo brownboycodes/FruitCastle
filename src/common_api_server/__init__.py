@@ -31,3 +31,8 @@ json_file_parsed = json.loads(json_file_raw)
 @app.route("/paypal-concept-data/v1/all-data")
 def paypal_concept_data_v1_all_data():
     return jsonify(json_file_parsed)
+
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=5000)
