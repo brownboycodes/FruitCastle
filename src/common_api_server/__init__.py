@@ -1,12 +1,25 @@
 import json
-from flask import Flask, jsonify
+from flask import Flask, config, jsonify, flash, send_from_directory, make_response, render_template
+# from config.app_config import *
+# import config.app_config
+app = Flask(__name__, static_url_path='/dist',
+            static_folder='client/dist', template_folder='client')
+# app = Flask(__name__,)
 
-app = Flask(__name__)
+# app.config['FLASK_ENV'] = 'development'
+# src.common_api_server.config.app_config.py
+app.config.from_object('config.app_config.DevConfig')
 
 
 @app.route('/')
 def hello():
-    return 'Hello, World!'
+    # return 'Hello, World!'
+    flash("accessed homepage")
+    # print(app.config.keys)
+    return send_from_directory(app.template_folder, "index.html")
+    # return send_from_directory("client", "index.html")
+
+    # return render_template("index.html")
 
 
 @app.route("/paypal-concept-data")
@@ -33,6 +46,48 @@ def paypal_concept_data_v1_all_data():
     return jsonify(json_file_parsed)
 
 
+"""
+@app.errorhandler(404)
+def page_not_found(e):
+    # Page not found.
+    # return send_from_directory(app.template_folder,"error_page.html")
+    return make_response(
+        render_template("error_page.html",error_code="404"),
+        404
+    )
+"""
+
+
+"""
+@app.errorhandler(404)
+def not_found():
+    # Page not found.
+    return make_response(
+        render_template("404.html"),
+        404
+     )
+
+
+@app.errorhandler(400)
+def bad_request():
+    # Bad request.
+    return make_response(
+        render_template("400.html"),
+        400
+    )
+
+
+@app.errorhandler(500)
+def server_error():
+    # Internal server error.
+    return make_response(
+        render_template("500.html"),
+        500
+    )
+"""
+
+
 if __name__ == "__main__":
-    app.debug = True
+    # app.secret_key = "123"
+    # app.debug = True
     app.run(host="0.0.0.0", port=5000)
