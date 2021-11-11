@@ -46,7 +46,7 @@ def paypal_concept_data_v1_all_data():
     return jsonify(json_file_parsed)
 
 
-"""
+
 @app.errorhandler(404)
 def page_not_found(e):
     # Page not found.
@@ -55,7 +55,7 @@ def page_not_found(e):
         render_template("error_page.html",error_code="404"),
         404
     )
-"""
+
 
 
 """
