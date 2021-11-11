@@ -2,5 +2,5 @@ venv
 temp
 src/common_api_server/__pycache__
 src/common_api_server/config
-src/common_api_server/client
+# src/common_api_server/client
 run_dev_mode.py
