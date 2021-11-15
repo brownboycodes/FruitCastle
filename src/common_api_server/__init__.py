@@ -11,16 +11,13 @@ app.config.from_object('config.app_config.DevConfig')
 
 
 @app.route('/')
-def hello():
-   
-    return send_from_directory(app.template_folder, "index.html")
+def home():
+    return render_template("index.html")
 
-    # return render_template("index.html")
 
 
 @app.route("/paypal-concept-data")
 def paypal_concept_data():
-
     return render_template("dashboard.html",py_sent_data="someDoc")
 
 @app.route("/paypal-concept-data/v1")
@@ -41,7 +38,7 @@ def paypal_concept_data_v1_all_data():
 
 @app.route('/paypal-concept-data/v1/docs')
 def paypal_concept_data_v1_docs():
-    return send_from_directory("paypal_concept_data/v1", "README.md")
+    return send_from_directory("../docs/paypal_concept_data/v1", "README.md")
 
 @app.errorhandler(404)
 def page_not_found(e):
