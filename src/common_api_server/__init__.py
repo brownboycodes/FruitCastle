@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join('.', 'src')))
+
 import json
 from flask import Flask, config, jsonify, flash, send_from_directory, make_response, render_template
 # from config.app_config import *
@@ -22,12 +25,12 @@ def hello():
     # return render_template("index.html")
 
 
-# @app.route("/paypal-concept-data")
-# def paypal_concept_data():
+@app.route("/paypal-concept-data")
+def paypal_concept_data():
     # response_for_route = {
     #     "error": "please mention the correct version of the paypal-concept-data API"}
     # return jsonify(response_for_route)
-    # return render_template("dashboard.html",py_sent_data="yaml")
+    return render_template("dashboard.html",py_sent_data="yaml")
 
 @app.route("/paypal-concept-data/v1")
 def paypal_concept_data_v1():
@@ -45,9 +48,9 @@ json_file_parsed = json.loads(json_file_raw)
 def paypal_concept_data_v1_all_data():
     return jsonify(json_file_parsed)
 
-# @app.route('/paypal-concept-data/v1/docs')
-# def paypal_concept_data_v1_docs():
-    # return send_from_directory("paypal_concept_data/v1", "README.md")
+@app.route('/paypal-concept-data/v1/docs')
+def paypal_concept_data_v1_docs():
+    return send_from_directory("paypal_concept_data/v1", "README.md")
 
 @app.errorhandler(404)
 def page_not_found(e):
