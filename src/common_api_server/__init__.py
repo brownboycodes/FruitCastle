@@ -2,35 +2,26 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join('.', 'src')))
 
 import json
-from flask import Flask, config, jsonify, flash, send_from_directory, make_response, render_template
-# from config.app_config import *
-# import config.app_config
+from flask import Flask, config, jsonify, send_from_directory, make_response, render_template
+
 app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
-# app = Flask(__name__,)
 
-# app.config['FLASK_ENV'] = 'development'
-# src.common_api_server.config.app_config.py
 app.config.from_object('config.app_config.DevConfig')
 
 
 @app.route('/')
 def hello():
-    # return 'Hello, World!'
-    flash("accessed homepage")
-    # print(app.config.keys)
+   
     return send_from_directory(app.template_folder, "index.html")
-    # return send_from_directory("client", "index.html")
 
     # return render_template("index.html")
 
 
 @app.route("/paypal-concept-data")
 def paypal_concept_data():
-    # response_for_route = {
-    #     "error": "please mention the correct version of the paypal-concept-data API"}
-    # return jsonify(response_for_route)
-    return render_template("dashboard.html",py_sent_data="yaml")
+
+    return render_template("dashboard.html",py_sent_data="someDoc")
 
 @app.route("/paypal-concept-data/v1")
 def paypal_concept_data_v1():
@@ -74,36 +65,6 @@ def page_not_found(e):
     )    
 
 
-"""
-@app.errorhandler(404)
-def not_found():
-    # Page not found.
-    return make_response(
-        render_template("404.html"),
-        404
-     )
-
-
-@app.errorhandler(400)
-def bad_request():
-    # Bad request.
-    return make_response(
-        render_template("400.html"),
-        400
-    )
-
-
-@app.errorhandler(500)
-def server_error():
-    # Internal server error.
-    return make_response(
-        render_template("500.html"),
-        500
-    )
-"""
-
 
 if __name__ == "__main__":
-    # app.secret_key = "123"
-    # app.debug = True
     app.run(host="0.0.0.0", port=5000)
