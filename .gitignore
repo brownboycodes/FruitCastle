@@ -1,3 +1,27 @@
 venv
 temp
 src/common_api_server/__pycache__
+src/common_api_server/config
+src/config/__pycache__
+# src/common_api_server/client
+# src/common_api_server/paypal_concept_data
+# src/docs
+run_dev_mode.py
+# src/common_api_server/client/dashboard.html
+# src/common_api_server/client/dist/css/bootstrap.min.css
+# src/common_api_server/client/dist/css/bootstrap.min.css.map
+# src/common_api_server/client/dist/css/bootstrap.rtl.min.css
+# src/common_api_server/client/dist/css/bootstrap.rtl.min.css.map
+# src/common_api_server/client/dist/css/dashboard.css
+src/common_api_server/client/dist/css/docs_style.css
+src/common_api_server/client/dist/css/test_docs_view.css
+# src/common_api_server/client/dist/images/data-server.png
+# src/common_api_server/client/dist/js/bootstrap.bundle.min.js
+# src/common_api_server/client/dist/js/bootstrap.bundle.min.js.map
+src/common_api_server/client/dist/js/customDocs.js
+# src/common_api_server/client/dist/js/dashboard.js
+src/common_api_server/client/dist/js/testDocsView.js
+src/common_api_server/client/docs_view.html
+src/common_api_server/client/test_docs_view.html
+src/common_api_server/paypal_concept_data/
+src/common_api_server/test.py
