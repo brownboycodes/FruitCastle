@@ -1,0 +1,113 @@
+{
+  "transactions":[
+    {
+      "type": "credit",
+      "amount": 500,
+      "transactionMember": "Dad",
+      "transactionDate": "11/06/2020 16:56:42",
+      "transactionID": "57ccfda9-7c35-4958-b4f3-fc6a534e7db7",
+      "transactionNote": "borrowed from Dad",
+      "transactionCategory": "family"
+    },
+    {
+      "type": "debit",
+      "amount": 750,
+      "transactionMember": "AirBNB",
+      "transactionDate": "09/07/2020 18:23:27",
+      "transactionID": "a012c6cc-7919-411d-8f0b-d4324861bbec",
+      "transactionNote": "mini vacation",
+      "transactionCategory": "holidays"
+    },
+    {
+      "type": "debit",
+      "amount": 775.99,
+      "transactionMember": "Apple Store",
+      "transactionDate": "26/08/2020 21:25:43",
+      "transactionID": "fa25f5be-8906-4558-a70a-7a01fae616f5",
+      "transactionNote": "purchased Apple products",
+      "transactionCategory": "shopping"
+    },
+    {
+      "type": "debit",
+      "amount": 32.5,
+      "transactionMember": "Uber",
+      "transactionDate": "26/09/2020 12:30:32",
+      "transactionID": "6758d288-d685-4d5e-a9d6-bdb6ec840cde",
+      "transactionNote": "cab fare",
+      "transactionCategory": "transport"
+    },
+    {
+      "type": "debit",
+      "amount": 127,
+      "transactionMember": "PBJ.LA",
+      "transactionDate": "02/10/2020 13:42:34",
+      "transactionID": "45cbdd29-3794-4213-ae8d-057f227a257b",
+      "transactionNote": "tasted all of their peanut butter and jam sandwiches",
+      "transactionCategory": "food"
+    },
+    {
+      "type": "credit",
+      "amount": 3000,
+      "transactionMember": "Unknown",
+      "transactionDate": "31/12/2020 13:42:34",
+      "transactionID": "4469b4a2-d7e6-4e22-a054-f9b57d6268dc",
+      "transactionCategory": "unknown"
+    },
+    {
+      "type": "debit",
+      "amount": 488.60,
+      "transactionMember": "EREWHON",
+      "transactionDate": "01/01/2021 16:55:49",
+      "transactionID": "6f008bb6-dd6c-45d4-be0a-0c26175bae43",
+      "transactionNote": "bread, milk, eggs, fruits, veggies etc.",
+      "transactionCategory": "groceries"
+    },
+    {
+      "type": "credit",
+      "amount": 243.65,
+      "transactionMember": "Girlfriend",
+      "transactionDate": "04/06/2021 06:20:42",
+      "transactionID": "c1fa0899-9a35-4f81-b05c-17f01bf23295",
+      "transactionNote": "received for covering her bill share on our date at Grand Central Market",
+      "transactionCategory": "family"
+    },
+    {
+      "type": "debit",
+      "amount": 127,
+      "transactionMember": "Costco Gas Station",
+      "transactionDate": "13/07/2021 14:55:32",
+      "transactionID": "7220869c-f05d-4d3a-8088-3718abd4cd82",
+      "transactionNote": "gas",
+      "transactionCategory": "transport"
+    },
+  
+    {
+      "type": "debit",
+      "amount": 550,
+      "transactionMember": "Landlord",
+      "transactionDate": "11/08/2021 02:51:54",
+      "transactionID": "a4b058f1-9aae-47ea-b36d-5068705df0a6",
+      "transactionNote": "rent + electricity",
+      "transactionCategory": "home"
+    },
+    {
+      "type": "debit",
+      "amount": 292.45,
+      "transactionMember": "All Day Baby",
+      "transactionDate": "26/08/2021 18:37:38",
+      "transactionID": "e8cbdfb3-ff7b-4f31-89c8-a6b34e113db2",
+      "transactionNote": "dinner date bill split ",
+      "transactionCategory": "food"
+    },
+    {
+      "type": "debit",
+      "amount": 585.99,
+      "transactionMember": "Amazon",
+      "transactionDate": "22/12/2021 09:32:26",
+      "transactionID": "96779dc8-bc0a-47c2-bc04-a4bbc1aac1e8",
+      "transactionNote": "holiday shopping",
+      "transactionCategory": "shopping"
+    }
+  ]
+  
+}
