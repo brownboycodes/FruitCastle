@@ -1,4 +1,6 @@
-from flask import Flask, config, jsonify, send_from_directory, make_response, render_template
+import random
+import re
+from flask import Flask, config, jsonify, send_from_directory, make_response, render_template, request
 import json
 import sys
 import os
@@ -9,6 +11,16 @@ app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 
 app.config.from_object('config.app_config.DevConfig')
+
+male_image_filenames = next(os.walk(
+    'src/common_api_server/client/dist/images/paypal_concept_images/paypal_concept_users/male'), (None, None, []))[2]
+
+female_image_filenames = next(os.walk(
+    'src/common_api_server/client/dist/images/paypal_concept_images/paypal_concept_users/female'), (None, None, []))[2]
+
+
+valid_email_regex = re.compile(
+    r"([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\[[\t -Z^-~]*])")
 
 
 @app.route('/')
@@ -28,8 +40,6 @@ def paypal_concept_data_v1():
     return jsonify(response_for_route)
 
 
-
-
 def get_json_data(json_file_path):
     json_file = open(json_file_path, "r")
     json_file_raw = json_file.read()
@@ -47,6 +57,56 @@ def paypal_concept_data_v1_all_data():
 def paypal_concept_data_v1_all_users():
     retrieved_file_data = get_json_data("src/data/local_test_user_data.json")
     return jsonify(retrieved_file_data)
+
+
+@app.route("/paypal-concept-data/v1/user/login", methods=['POST', 'GET'])
+def paypal_concept_data_v1_user_login():
+
+    if request.method == 'POST':
+        login_response = {'error': 'some error occurred'}
+        username_or_email = request.json['userInput']
+        entered_password=request.json['password']
+
+        retrieved_file_data = get_json_data(
+            "src/data/local_test_user_data.json")['users']
+        if re.fullmatch(valid_email_regex, username_or_email):
+            filtered_data = [
+                x for x in retrieved_file_data if x['email'] == username_or_email]
+            if len(filtered_data) != 0:
+                if entered_password==filtered_data[0]['password']:
+                    if filtered_data[0]['gender'] == "Female":
+                        filtered_data[0]['avatar'] = random.choice(
+                            female_image_filenames)
+                    else:
+                        filtered_data[0]['avatar'] = random.choice(
+                            male_image_filenames)
+                    login_response = {'users': filtered_data}
+                else:
+                    login_response={'error':"incorrect password"}
+            else:
+                login_response = {
+                    'error': "no account found with the email address provided"}
+        else:
+            filtered_data = [
+                x for x in retrieved_file_data if x['username'] == username_or_email]
+            if len(filtered_data) != 0:
+                if entered_password==filtered_data[0]['password']:
+                    if filtered_data[0]['gender'] == "Female":
+                        filtered_data[0]['avatar'] = random.choice(
+                            female_image_filenames)
+                    else:
+                        filtered_data[0]['avatar'] = random.choice(
+                            male_image_filenames)
+                    login_response = {'users': filtered_data}
+                else:
+                    login_response={'error':"incorrect password"}
+            else:
+                login_response = {
+                    'error': "no account found with the username provided"}
+        return jsonify(login_response)
+
+    if request.method == 'GET':
+        return jsonify({'error': 'this is a GET request'})
 
 
 @app.route("/paypal-concept-data/v1/all-transactions")
