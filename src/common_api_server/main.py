@@ -7,12 +7,15 @@ import json
 import sys
 import os
 import jwt
+from flask_cors import CORS
 
 sys.path.append(os.path.abspath(os.path.join('.', 'src')))
 
 
 app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
+
+CORS(app)
 
 # app.config.from_object('config.app_config.DevConfig')
 # app.config.from_object('config.app_config.ProductionConfig')
