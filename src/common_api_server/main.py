@@ -15,6 +15,7 @@ app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 
 # app.config.from_object('config.app_config.DevConfig')
+app.config.from_object('config.app_config.ProductionConfig')
 
 male_image_filenames = next(os.walk(
     'src/common_api_server/client/dist/images/paypal_concept_images/paypal_concept_users/male'), (None, None, []))[2]
