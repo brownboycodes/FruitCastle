@@ -14,7 +14,7 @@ sys.path.append(os.path.abspath(os.path.join('.', 'src')))
 app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 
-# app.config.from_object('config.app_config.DevConfig')
+app.config.from_object('config.app_config.DevConfig')
 
 male_image_filenames = next(os.walk(
     'src/common_api_server/client/dist/images/paypal_concept_images/paypal_concept_users/male'), (None, None, []))[2]
@@ -210,5 +210,5 @@ def page_not_found(e):
     )
 
 
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
