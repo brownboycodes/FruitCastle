@@ -32,7 +32,7 @@ valid_email_regex = re.compile(
 
 secret_key_jwt = "3v9fIXKwsOn9bp4vI2amfLrSx3wJ2gF8STMtEJLjM5kPVXdWFoTPOiABiNhuGvLf0Y2hoaJm7LuCUTH5mKTayjm2338mzGgmpUUwN49IhrH9Kb4Htrb6TkPjWzeMz1RzKh8yhD2BmeuTrb2st2KQfisQs2eIs7LKQu37W68bfhVG0ryecIO0q7JK4Q1fewFHRP0RI2p0"
 
-token_expiration_date = datetime.now(tz=timezone.utc)+timedelta(minutes=3)
+# token_expiration_date = datetime.now(tz=timezone.utc)+timedelta(minutes=3)
 
 
 def decode_json_token(encoded_token):
@@ -137,7 +137,7 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'users': filtered_data[0]['id'], 'exp': token_expiration_date}, secret_key_jwt, algorithm="HS256")
+                        {'users': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=3)}, secret_key_jwt, algorithm="HS256")
                     login_response = {'hash': successful_hash}
                 else:
                     login_response = {'error': "incorrect password"}
@@ -150,7 +150,7 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'users': filtered_data[0]['id'], 'exp': token_expiration_date}, secret_key_jwt, algorithm="HS256")
+                        {'users': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=3)}, secret_key_jwt, algorithm="HS256")
                     login_response = {'hash': successful_hash}
                 else:
                     login_response = {'error': "incorrect password"}
