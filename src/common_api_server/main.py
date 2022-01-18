@@ -18,7 +18,6 @@ app = Flask(__name__, static_url_path='/dist',
 CORS(app)
 
 # app.config.from_object('config.app_config.DevConfig')
-# app.config.from_object('config.app_config.ProductionConfig')
 
 male_image_filenames = next(os.walk(
     'src/common_api_server/client/dist/images/paypal_concept_images/paypal_concept_users/male'), (None, None, []))[2]
@@ -32,7 +31,7 @@ valid_email_regex = re.compile(
 
 secret_key_jwt = "3v9fIXKwsOn9bp4vI2amfLrSx3wJ2gF8STMtEJLjM5kPVXdWFoTPOiABiNhuGvLf0Y2hoaJm7LuCUTH5mKTayjm2338mzGgmpUUwN49IhrH9Kb4Htrb6TkPjWzeMz1RzKh8yhD2BmeuTrb2st2KQfisQs2eIs7LKQu37W68bfhVG0ryecIO0q7JK4Q1fewFHRP0RI2p0"
 
-# token_expiration_date = datetime.now(tz=timezone.utc)+timedelta(minutes=3)
+
 
 
 def decode_json_token(encoded_token):
@@ -50,7 +49,7 @@ def json_token_validifier(encoded_token):
     try:
         decoded_token = jwt.decode(
             encoded_token, secret_key_jwt, algorithms=["HS256"])
-        return "valid"
+        return decoded_token
     except jwt.ExpiredSignatureError:
         return "invalid"
     except jwt.InvalidTokenError:
@@ -101,21 +100,24 @@ def paypal_concept_data_v1_get_user_by_id(user_id):
     if request.method == 'POST':
         received_hash = request.json['hash']
         token_status = json_token_validifier(received_hash)
-        if token_status == "valid":
-            retrieved_file_data = get_json_data(
-                "src/data/local_test_user_data.json")['users']
-            filtered_data = [
-                x for x in retrieved_file_data if x['id'] == user_id]
-            if len(filtered_data) != 0:
-                if filtered_data[0]['gender'] == "Female":
-                    filtered_data[0]['avatar'] = random.choice(
-                        female_image_filenames)
+        if token_status != "invalid":
+            if token_status['userId']==user_id:
+                retrieved_file_data = get_json_data(
+                    "src/data/local_test_user_data.json")['users']
+                filtered_data = [
+                    x for x in retrieved_file_data if x['id'] == user_id]
+                if len(filtered_data) != 0:
+                    if filtered_data[0]['gender'] == "Female":
+                        filtered_data[0]['avatar'] = random.choice(
+                            female_image_filenames)
+                    else:
+                        filtered_data[0]['avatar'] = random.choice(
+                            male_image_filenames)
+                    login_response = {'users': filtered_data}
                 else:
-                    filtered_data[0]['avatar'] = random.choice(
-                        male_image_filenames)
-                login_response = {'users': filtered_data}
+                    login_response = {'error': "user not found"}
             else:
-                login_response = {'error': "user not found"}
+                login_response={'error':"access denied! suspicious login detected"}
         else:
             login_response = {
                 'error': "session is invalid, please login again"}
@@ -137,7 +139,7 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'users': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=3)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=35)}, secret_key_jwt, algorithm="HS256")
                     login_response = {'hash': successful_hash}
                 else:
                     login_response = {'error': "incorrect password"}
@@ -150,7 +152,7 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'users': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=3)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=35)}, secret_key_jwt, algorithm="HS256")
                     login_response = {'hash': successful_hash}
                 else:
                     login_response = {'error': "incorrect password"}
