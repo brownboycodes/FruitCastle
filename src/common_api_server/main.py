@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta, timezone
 import random
 import re
-from urllib import response
-from flask import Flask, config, jsonify, send_from_directory, make_response, render_template, request
+
+from flask import Flask, jsonify, send_from_directory, make_response, render_template, request
 import json
 import sys
 import os
@@ -30,8 +30,6 @@ valid_email_regex = re.compile(
     r"([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\[[\t -Z^-~]*])")
 
 secret_key_jwt = "3v9fIXKwsOn9bp4vI2amfLrSx3wJ2gF8STMtEJLjM5kPVXdWFoTPOiABiNhuGvLf0Y2hoaJm7LuCUTH5mKTayjm2338mzGgmpUUwN49IhrH9Kb4Htrb6TkPjWzeMz1RzKh8yhD2BmeuTrb2st2KQfisQs2eIs7LKQu37W68bfhVG0ryecIO0q7JK4Q1fewFHRP0RI2p0"
-
-
 
 
 def decode_json_token(encoded_token):
@@ -80,16 +78,31 @@ def get_json_data(json_file_path):
     return json_file_parsed
 
 
-@app.route("/paypal-concept-data/v1/all-data")
+@app.route("/paypal-concept-data/v1/all-data", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_data():
-    retrieved_file_data = get_json_data("src/data/users.json")
-    return jsonify(retrieved_file_data)
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data("src/data/users.json")
+            return jsonify(retrieved_file_data)
+        else:
+            return jsonify({'error': "your session has expired please login again"})
 
 
-@app.route("/paypal-concept-data/v1/all-users")
+@app.route("/paypal-concept-data/v1/all-users", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_users():
-    retrieved_file_data = get_json_data("src/data/local_test_user_data.json")
-    return jsonify(retrieved_file_data)
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data(
+                "src/data/local_test_user_data.json")
+            return jsonify(retrieved_file_data)
+        else:
+            return jsonify({'error': "your session has expired please login again"})
 
 
 @app.route("/paypal-concept-data/v1/user/<int:user_id>", methods=['POST', 'GET'])
@@ -101,7 +114,7 @@ def paypal_concept_data_v1_get_user_by_id(user_id):
         received_hash = request.json['hash']
         token_status = json_token_validifier(received_hash)
         if token_status != "invalid":
-            if token_status['userId']==user_id:
+            if token_status['userId'] == user_id:
                 retrieved_file_data = get_json_data(
                     "src/data/local_test_user_data.json")['users']
                 filtered_data = [
@@ -117,7 +130,8 @@ def paypal_concept_data_v1_get_user_by_id(user_id):
                 else:
                     login_response = {'error': "user not found"}
             else:
-                login_response={'error':"access denied! suspicious login detected"}
+                login_response = {
+                    'error': "access denied! suspicious login detected"}
         else:
             login_response = {
                 'error': "session is invalid, please login again"}
@@ -175,16 +189,30 @@ def paypal_concept_data_v1_user_verify_login():
         return jsonify({'error': 'this is a GET request'})
 
 
-@app.route("/paypal-concept-data/v1/all-transactions")
+@app.route("/paypal-concept-data/v1/all-transactions", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_transactions():
-    retrieved_file_data = get_json_data("src/data/transactions.json")
-    return jsonify(retrieved_file_data)
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data("src/data/transactions.json")
+            return jsonify(retrieved_file_data)
+        else:
+            return jsonify({'error': "your session has expired please login again"})
 
 
-@app.route("/paypal-concept-data/v1/all-contacts")
+@app.route("/paypal-concept-data/v1/all-contacts", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_contacts():
-    retrieved_file_data = get_json_data("src/data/local_contacts.json")
-    return jsonify(retrieved_file_data)
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data("src/data/local_contacts.json")
+            return jsonify(retrieved_file_data)
+        else:
+            return jsonify({'error': "your session has expired please login again"})
 
 
 @app.route('/paypal-concept-data/v1/docs')
