@@ -25,3 +25,10 @@ src/common_api_server/client/docs_view.html
 src/common_api_server/client/test_docs_view.html
 src/common_api_server/paypal_concept_data/
 src/common_api_server/test.py
+src/config
+
+# files
+MANIFEST.in
+pyproject.toml
+run_app.py
+setup.py
