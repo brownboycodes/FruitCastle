@@ -1,2 +1,0 @@
-graft src/common_api_server/dist
-global-exclude *.pyc
