@@ -150,8 +150,8 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=35)}, secret_key_jwt, algorithm="HS256")
-                    login_response = {'hash': successful_hash}
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
+                    login_response = {'hash': successful_hash,'userId': filtered_data[0]['id']}
                 else:
                     login_response = {'error': "incorrect password"}
             else:
@@ -163,8 +163,8 @@ def paypal_concept_data_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=35)}, secret_key_jwt, algorithm="HS256")
-                    login_response = {'hash': successful_hash}
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
+                    login_response = {'hash': successful_hash,'userId': filtered_data[0]['id']}
                 else:
                     login_response = {'error': "incorrect password"}
             else:
