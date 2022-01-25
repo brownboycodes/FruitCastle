@@ -28,20 +28,6 @@
         "bankName": "BANK OF AMERICA",
         "bankBalance": "USD 43398"
       },
-      "credit_card": [
-        {
-          "cc_number": "377467722940471",
-          "cardPin": "4762",
-          "cardBrand": "AMERICAN EXPRESS",
-          "expiryDate": "02/2027"
-        },
-        {
-          "cc_number": "6011884188083639",
-          "cardPin": "2917",
-          "cardBrand": "DISCOVER",
-          "expiryDate": "03/2026"
-        }
-      ],
       "walletAddress": "19UBFtiqTgcWXkrfPsq1G2NXQYcfPUyqsW"
     },
     {
@@ -72,14 +58,6 @@
         "bankName": "CITIBANK",
         "bankBalance": "USD 27206"
       },
-      "credit_card": [
-        {
-          "cc_number": "6011884188083639",
-          "cardPin": "2917",
-          "cardBrand": "DISCOVER",
-          "expiryDate": "03/2026"
-        }
-      ],
       "walletAddress": "1KYq2otLhqiJtmmz8YuCojUWFHjx21igP8"
     },
     {
@@ -110,20 +88,6 @@
         "bankName": "WELLS FARGO BANK",
         "bankBalance": "USD 19781"
       },
-      "credit_card": [
-        {
-          "cc_number": "5433787007810763",
-          "cardPin": "7192",
-          "cardBrand": "MASTERCARD",
-          "expiryDate": "09/2024"
-        },
-        {
-          "cc_number": "4804097266317",
-          "cardPin": "7543",
-          "cardBrand": "VISA",
-          "expiryDate": "05/2023"
-        }
-      ],
       "walletAddress": "1HTCJPQXnZyU6SeC3fQrN8KTePCsHx9XxA"
     },
     {
@@ -155,14 +119,6 @@
         "bankName": "J.P.MORGAN CHASE",
         "bankBalance": "USD 17713"
       },
-      "credit_card": [
-        {
-          "cc_number": "4804097266317",
-          "cardPin": "7543",
-          "cardBrand": "VISA",
-          "expiryDate": "05/2023"
-        }
-      ],
       "walletAddress": "189VSAfPdmAULvTyN4EiGj31gGQgUFwWWh"
     }
   ]

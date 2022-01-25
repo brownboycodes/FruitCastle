@@ -211,6 +211,21 @@ def paypal_concept_data_v1_all_contacts():
         else:
             return jsonify({'error': "your session has expired please login again"})
 
+@app.route("/paypal-concept-data/v1/available-cards", methods=['POST', 'GET'])
+def paypal_concept_data_v1_available_cards():
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data("src/data/card_data.json")
+            available_cards=retrieved_file_data['availableCards']
+            random.shuffle(available_cards)
+            number_of_cards=random.choice(range(1,5))
+            return jsonify({'availableCards':available_cards[:number_of_cards]})
+        else:
+            return jsonify({'error': "your session has expired please login again"})
+
 
 @app.route('/paypal-concept-data/v1/docs')
 def paypal_concept_data_v1_docs():
