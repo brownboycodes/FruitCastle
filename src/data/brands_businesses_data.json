@@ -1,0 +1,233 @@
+{
+  "businesses": [
+    {
+      "name": "Adidas",
+      "homepage": "adidas.com",
+      "avatar": "adidas-logo.png",
+      "walletAddress": "myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb"
+    },
+    {
+      "name": "Amazon",
+      "homepage": "amazon.com",
+      "avatar": "amazon-logo.png",
+      "walletAddress": "muFgGrLdYgDRH4zXPMvgdGTiEhsLaMcqWW"
+    },
+    {
+      "name": "Apple",
+      "homepage": "apple.com",
+      "avatar": "apple-logo.png",
+      "walletAddress": "n2xbfYFk7Uq2t5WJM3YqY7KfiT4SQJiMU1"
+    },
+
+    {
+      "name": "Audi",
+      "homepage": "audi.com",
+      "avatar": "audi-logo.png",
+      "walletAddress": "n4LVf6MGP52tqrTWwMnwQQrjsqGtB1srWz"
+    },
+    {
+      "name": "blinkit",
+      "homepage": "blinkit.com",
+      "avatar": "blinkit-logo.png",
+      "walletAddress": "mqAxGvsBvrehWPpmqRZrrhmgLru2m2zjJP"
+    },
+    {
+      "name": "BMW",
+      "homepage": "bmw.com",
+      "avatar": "bmw-logo.png",
+      "walletAddress": "mxQEcgbLCaxEnGkboNiBDHKE8G4SwrFA9S"
+    },
+    {
+      "name": "Budweiser",
+      "homepage": "us.budweiser.com",
+      "avatar": "budweiser-logo.png",
+      "walletAddress": "mxnra3xkk1TVwxi7ugpWuTFfxf4AP9akwt"
+    },
+    {
+      "name": "Cartier",
+      "homepage": "cartier.com",
+      "avatar": "cartier-logo.png",
+      "walletAddress": "ms9is4919Ywnxg3WrxSPPK8U1MDM5VTB8h"
+    },
+    {
+      "name": "Chai Cult",
+      "homepage": "chaicult.com",
+      "avatar": "chai-cult-logo.png",
+      "walletAddress": "mw9kYehaN3fRX7cKRunrWEUsVrUHZjsqbH"
+    },
+    {
+      "name": "Chanel",
+      "homepage": "chanel.com",
+      "avatar": "chanel-logo.png",
+      "walletAddress": "mngicYVv3b1RVk3EZyR6dwDaMePp6hRZGe"
+    },
+    {
+      "name": "Corona",
+      "homepage": "coronausa.com",
+      "avatar": "corona-logo.png",
+      "walletAddress": "mpdfA2zNS4tqnraUxMcecG2K8pyjpZgYiw"
+    },
+    {
+      "name": "ebay",
+      "homepage": "ebay.com",
+      "avatar": "ebay-logo.png",
+      "walletAddress": "mqG6oSbAU6R3bdLW6M4JPN27pUKNCFo3vD"
+    },
+    {
+      "name": "FedEx",
+      "homepage": "fedex.com",
+      "avatar": "fedex-logo.png",
+      "walletAddress": "mkGDW6vn2xmkQyBVM755CqJYFrdKwjSd95"
+    },
+    {
+      "name": "flipkart",
+      "homepage": "flipkart.com",
+      "avatar": "flipkart-logo.png",
+      "walletAddress": "n45TmH2L4GPDZXkSJA66k1YCEJPUUNW7hn"
+    },
+    {
+      "name": "GUCCI",
+      "homepage": "gucci.com",
+      "avatar": "gucci-logo.png",
+      "walletAddress": "mt6wmB7r8QhJZUxRsRVsTSYEa8kiWiR2wJ"
+    },
+    {
+      "name": "Heineken",
+      "homepage": "heineken.com",
+      "avatar": "heineken-logo.png",
+      "walletAddress": "n1HdTDbP2diNaNdeF2j2dNCXyj43m9TLRb"
+    },
+    {
+      "name": "Hermes",
+      "homepage": "hermes.com",
+      "avatar": "hermes-logo.png",
+      "walletAddress": "mrq1HkQj8sWLwZfp1zYr7yHC1MB9BmZ2z8"
+    },
+    {
+      "name": "Home Depot",
+      "homepage": "homedepot.com",
+      "avatar": "home-depot-logo.png",
+      "walletAddress": "mghGcNjUjNgRTRb4qNVCJktM7R6PsUWFLn"
+    },
+    {
+      "name": "Hewlett-Packard",
+      "homepage": "hp.com",
+      "avatar": "hp-logo.png",
+      "walletAddress": "mpT9PnSk5vTyRJ6xiPj9m8SNNAk4tLQaQu"
+    },
+    {
+      "name": "IKEA",
+      "homepage": "ikea.com",
+      "avatar": "ikea-logo.png",
+      "walletAddress": "n3GEXKuqKHEg11Vf6MieSyU7RJt1obmbPT"
+    },
+    {
+      "name": "Kellogg's",
+      "homepage": "kelloggs.com",
+      "avatar": "kelloggs-logo.png",
+      "walletAddress": "mvRBQJPGAQ8J9zZNYcMQ2cJYVnv2o9c49N"
+    },
+    {
+      "name": "KFC",
+      "homepage": "kfc.com",
+      "avatar": "kfc-logo.png",
+      "walletAddress": "mgbfeKrAnhLJVoABBxMFGAdgE8umpYN7Rx"
+    },
+    {
+      "name": "LEGO",
+      "homepage": "lego.com",
+      "avatar": "lego-logo.png",
+      "walletAddress": "muRKYBTZEh85DjaWJuLo6XeTbTo4UFinzy"
+    },
+    {
+      "name": "Louis Vuitton",
+      "homepage": "louisvuitton.com",
+      "avatar": "louis-vuitton-logo.png",
+      "walletAddress": "mkQf9Pi7dok4HfXagvpv9x58RkNGRYmmnc"
+    },
+    {
+      "name": "Marlboro",
+      "homepage": "marlboro.com",
+      "avatar": "marlboro-logo.png",
+      "walletAddress": "muxT9d4h5WDUmKBqfYUJk335VUXqNMp7qL"
+    },
+    {
+      "name": "McDonalds",
+      "homepage": "mcdonalds.com",
+      "avatar": "mcdonalds-logo.png",
+      "walletAddress": "n1dxekJAgZJiztaWGE3Umicq3pcJSDhqKn"
+    },
+    {
+      "name": "Mercedes-Bbenz",
+      "homepage": "mercedes-benz.com",
+      "avatar": "mercedes-benz-logo.png",
+      "walletAddress": "mzjnVmR3RgPSbF7P7tJLQ8DCiHws2VGyhG"
+    },
+    {
+      "name": "Netflix",
+      "homepage": "netflix.com",
+      "avatar": "Netflix-logo.png",
+      "walletAddress": "ms3BfCTczbJk63sajsQxCRn8Z4u4WyizSQ"
+    },
+    {
+      "name": "Nike",
+      "homepage": "nike.com",
+      "avatar": "nike-logo.png",
+      "walletAddress": "mxrjnecU7YpbYukcrHbBkXjAvUyTWCPhjk"
+    },
+    {
+      "name": "PBJ.LA",
+      "homepage": "pbj.la",
+      "avatar": "pbjla-logo.png",
+      "walletAddress": "n37MqozpfLLipswMzRS7V6CbEnZVhsGYGq"
+    },
+    {
+      "name": "Porsche",
+      "homepage": "porsche.com",
+      "avatar": "porsche-logo.png",
+      "walletAddress": "mgDKxnwNpmxGSSZLryBG83LXVxKarXvQbi"
+    },
+    {
+      "name": "Red Bull",
+      "homepage": "redbull.com",
+      "avatar": "red-bull-logo.png",
+      "walletAddress": "mw6VK5bfdrQXveME66C5ee8qN6UQbphzu8"
+    },
+    {
+      "name": "ROLEX",
+      "homepage": "rolex.com",
+      "avatar": "rolex-logo.png",
+      "walletAddress": "mgSwcbqL6B5GbTwA2YRG5c1rrXAu53xeUH"
+    },
+    {
+      "name": "snapdeal",
+      "homepage": "snapdeal.com",
+      "avatar": "snapdeal-logo.png",
+      "walletAddress": "mhEjBtGNbvqndN2q7GSh47Y31TrwcASU26"
+    },
+    {
+      "name": "Starbucks",
+      "homepage": "starbucks.com",
+      "avatar": "starbucks-logo.png",
+      "walletAddress": "mxw6X4A3dYMKwfN1FZbc4qTowMBDNEwkG1"
+    },
+    {
+      "name": "ups",
+      "homepage": "ups.com",
+      "avatar": "ups-logo.png",
+      "walletAddress": "mx521uKKXRxNTVXBJRwvj2hVABg5eECpVW"
+    },
+    {
+      "name": "Walmart",
+      "homepage": "walmart.com",
+      "avatar": "walmart-logo.png",
+      "walletAddress": "n3v8fHHEjKLTxtTwDXBrk2wqNzyztuHUmB"
+    },
+    {
+      "name": "ZARA",
+      "homepage": "zara.com",
+      "avatar": "zara-logo.png",
+      "walletAddress": "mgmZS5KhxTFVBAQX2HJ3p2dKhnsZp3hB7r"
+    }
+  ]
+}
