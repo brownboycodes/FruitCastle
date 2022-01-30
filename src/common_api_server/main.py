@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta, timezone
 import random
 import re
+from uuid import uuid4
 
 from flask import Flask, jsonify, send_from_directory, make_response, render_template, request
 import json
@@ -67,7 +68,9 @@ def paypal_concept_data_v1():
         "error": "please mention exactly what you want from version 1 of the paypal-concept-data API"}
     return jsonify(response_for_route)
 
-#? PURPOSE: for extracting json data from file
+# ? PURPOSE: for extracting json data from file
+
+
 def get_json_data(json_file_path):
     json_file = open(json_file_path, "r")
     json_file_raw = json_file.read()
@@ -101,7 +104,9 @@ def paypal_concept_data_v1_all_users():
         else:
             return jsonify({'error': "your session has expired please login again"})
 
-#? PURPOSE: to allow an already logged in user to access their account if they have a valid token
+# ? PURPOSE: to allow an already logged in user to access their account if they have a valid token
+
+
 @app.route("/paypal-concept-data/v1/user/<int:user_id>", methods=['POST', 'GET'])
 def paypal_concept_data_v1_get_user_by_id(user_id):
     login_response = {"error": "something went wrong"}
@@ -134,7 +139,9 @@ def paypal_concept_data_v1_get_user_by_id(user_id):
                 'error': "session is invalid, please login again"}
     return jsonify(login_response)
 
-#? PURPOSE: to allow the user to access their account when they sign in from their device
+# ? PURPOSE: to allow the user to access their account when they sign in from their device
+
+
 @app.route("/paypal-concept-data/v1/user/login", methods=['POST', 'GET'])
 def paypal_concept_data_v1_user_login():
     if request.method == 'POST':
@@ -199,7 +206,9 @@ def paypal_concept_data_v1_user_verify_login():
     if request.method == 'GET':
         return jsonify({'error': 'this is a GET request'})
 
-#? PURPOSE: for extracting transaction records
+# ? PURPOSE: for extracting transaction records
+
+
 @app.route("/paypal-concept-data/v1/all-transactions", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_transactions():
     if request.method == 'GET':
@@ -212,7 +221,9 @@ def paypal_concept_data_v1_all_transactions():
         else:
             return jsonify({'error': "your session has expired please login again"})
 
-#? PURPOSE: for extracting contacts of the user
+# ? PURPOSE: for extracting contacts of the user
+
+
 @app.route("/paypal-concept-data/v1/all-contacts", methods=['POST', 'GET'])
 def paypal_concept_data_v1_all_contacts():
     if request.method == 'GET':
@@ -225,7 +236,9 @@ def paypal_concept_data_v1_all_contacts():
         else:
             return jsonify({'error': "your session has expired please login again"})
 
-#? PURPOSE: for retrieving cards available for the user
+# ? PURPOSE: for retrieving cards available for the user
+
+
 @app.route("/paypal-concept-data/v1/available-cards", methods=['POST', 'GET'])
 def paypal_concept_data_v1_available_cards():
     if request.method == 'GET':
@@ -238,6 +251,42 @@ def paypal_concept_data_v1_available_cards():
             random.shuffle(available_cards)
             number_of_cards = random.choice(range(1, 5))
             return jsonify({'availableCards': available_cards[:number_of_cards]})
+        else:
+            return jsonify({'error': "your session has expired please login again"})
+
+# ? PURPOSE: for retrieving list of brands and businesses
+
+
+@app.route("/paypal-concept-data/v2/businesses-and-brands", methods=['POST', 'GET'])
+def paypal_concept_data_v2_businesses_and_brands():
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        token_status = json_token_validifier(request.json['hash'])
+        if token_status != "invalid":
+            retrieved_file_data = get_json_data(
+                "src/data/brands_businesses_data.json")
+            return jsonify(retrieved_file_data)
+        else:
+            return jsonify({'error': "your session has expired please login again"})
+
+# ? PURPOSE: for executing transaction
+
+
+@app.route("/paypal-concept-data/v2/execute-transaction", methods=['POST', 'GET'])
+def paypal_concept_data_v2_execute_transaction():
+    if request.method == 'GET':
+        return jsonify({"error": "this is a GET request"})
+    if request.method == 'POST':
+        print("enteres post execute")
+        token_status = json_token_validifier(request.json['hash'])
+        print(token_status)
+        if token_status != "invalid":
+            transaction_receipt = request.json['transactionReceipt']
+            transaction_status = random.choice(['successful', 'failed'])
+            transaction_id = uuid4()
+            transaction_date = datetime.now()
+            return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status, 'transactionID': transaction_id, 'transactionDate': transaction_date})
         else:
             return jsonify({'error': "your session has expired please login again"})
 
