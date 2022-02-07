@@ -1,0 +1,181 @@
+{
+  "name": "PayPal Concept",
+  "description": "Built using the Flutter framework and Dart language. Backend service was built using the Flask framework and Python",
+  "attributions": [
+    {
+      "name": "PayPal",
+      "header": "The real OG",
+      "avatar": "paypal-logo.png",
+      "website": "https://www.paypal.com/",
+      "socials": [
+        {
+          "title": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+          "avatar": "ruslan_babkin/google-play.png"
+        },
+        {
+          "title": "App Store",
+          "url": "https://apps.apple.com/us/app/paypal-send-shop-manage/id283646709?itsct=apps_box_badge&itscg=30200",
+          "avatar": "ruslan_babkin/apple.png"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/paypal/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/PayPal/",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/PayPal",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/company/paypal",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "PayPal API",
+          "url": "https://developer.paypal.com/api/rest/",
+          "avatar": "ruslan_babkin/paypal.png"
+        }
+      ]
+    },
+    {
+      "name": "Vadim Demenko",
+      "header": "UI inspiration from the works of",
+      "avatar": "vadim-demenko.png",
+
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/vademenko/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/vdemenko",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/vdemenko",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/vademenko",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/vdemenko/",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "UI Design",
+          "url": "https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Ruslan Babkin",
+      "header": "Icons designed by ",
+      "avatar": "ruslan-babkin.jpg",
+      "website": "https://ruslanbabkin.com/",
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/ruslanbabkin/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/ruslanbabkin",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/ruslanbabkin",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Flaticon",
+          "url": "https://www.flaticon.com/authors/freepik",
+          "avatar": "freepik/flaticon.png"
+        },
+        {
+          "title": "Icon Design",
+          "url": "https://www.flaticon.com/packs/social-media-163",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Freepik",
+      "header": "Icons designed by",
+      "avatar": "freepik-logo.png",
+      "website": "https://www.freepik.com/",
+      "socials": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/Freepik_Vectors",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/Freepik",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "Flaticon",
+          "url": "https://www.flaticon.com/authors/freepik",
+          "avatar": "freepik/flaticon.png"
+        }
+      ]
+    },
+    {
+      "name": "Nabhodipta Garai",
+      "header": "App developed by",
+      "avatar": "brownboycodes-avatar.png",
+      "website": "https://brownboycodes.vercel.app/",
+      "socials": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/brownboycodes",
+          "avatar": "ruslan_babkin/github.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/brownboycodes",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/brownboycodes/",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/brownboycodes",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "source code for the Flutter app",
+          "url": "https://github.com/brownboycodes/Paypal-Concept-Flutter",
+          "avatar": "programming/flutter"
+        },
+        {
+          "title": "source code for the Flask server",
+          "url": "https://github.com/brownboycodes/common-api-server",
+          "avatar": "programming/pycon-2019"
+        }
+      ]
+    }
+  ]
+}
