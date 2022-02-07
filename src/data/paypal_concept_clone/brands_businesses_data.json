@@ -26,6 +26,12 @@
       "walletAddress": "n4LVf6MGP52tqrTWwMnwQQrjsqGtB1srWz"
     },
     {
+      "name": "BARBEQUE NATION",
+      "homepage": "barbequenation.com",
+      "avatar": "barbeque-nation-logo.png",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "blinkit",
       "homepage": "blinkit.com",
       "avatar": "blinkit-logo.png",
@@ -38,10 +44,22 @@
       "walletAddress": "mxQEcgbLCaxEnGkboNiBDHKE8G4SwrFA9S"
     },
     {
+      "name": "BOX8",
+      "homepage": "box8.com",
+      "avatar": "box8-logo.png",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "Budweiser",
       "homepage": "us.budweiser.com",
       "avatar": "budweiser-logo.png",
       "walletAddress": "mxnra3xkk1TVwxi7ugpWuTFfxf4AP9akwt"
+    },
+    {
+      "name": "BURGER KING",
+      "homepage": "burgerking.com",
+      "avatar": "burger-king-logo.jpg",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
     },
     {
       "name": "Cartier",
@@ -62,10 +80,53 @@
       "walletAddress": "mngicYVv3b1RVk3EZyR6dwDaMePp6hRZGe"
     },
     {
+      "name": "Cheezzo by Pi",
+      "homepage": "cheezzo.com",
+      "avatar": "cheezzo-by-pi-logo.png",
+      "walletAddress": "mtgaMaumrh2Twb9tx29n2wDCKeagUKPgB1"
+    },
+    {
+      "name": "ChowNow",
+      "homepage": "chownow.com",
+      "avatar": "chownow-logo.png",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "Corona",
       "homepage": "coronausa.com",
       "avatar": "corona-logo.png",
       "walletAddress": "mpdfA2zNS4tqnraUxMcecG2K8pyjpZgYiw"
+    },
+
+    {
+      "name": "CRED",
+      "homepage": "cred.club",
+      "avatar": "cred-black-logo.jpg",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
+      "name": "cult.fit",
+      "homepage": "cred.club",
+      "avatar": "cult-fit-logo.jpg",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
+      "name": "deliveroo",
+      "homepage": "deliveroo.com",
+      "avatar": "deliveroo-logo.png",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
+      "name": "Domino's Pizza",
+      "homepage": "dominos.co.in",
+      "avatar": "dominos-logo.jpg",
+      "walletAddress": "mt3QNUhxcjipehYTEScV8GySRKJhGyenfj"
+    },
+    {
+      "name": "DOORDASH",
+      "homepage": "doordash.com",
+      "avatar": "doordash-logo.jpg",
+      "walletAddress": "mqG6oSbAU6R3bdLW6M4JPN27pUKNCFo3vD"
     },
     {
       "name": "ebay",
@@ -122,6 +183,12 @@
       "walletAddress": "n3GEXKuqKHEg11Vf6MieSyU7RJt1obmbPT"
     },
     {
+      "name": "JIMIS BURGER",
+      "homepage": "facebook.com/jimisburger/",
+      "avatar": "jimis-burger-logo.jpg",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "Kellogg's",
       "homepage": "kelloggs.com",
       "avatar": "kelloggs-logo.png",
@@ -158,6 +225,12 @@
       "walletAddress": "n1dxekJAgZJiztaWGE3Umicq3pcJSDhqKn"
     },
     {
+      "name": "meesho",
+      "homepage": "meesho.com",
+      "avatar": "meesho-logo.png",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "Mercedes-Bbenz",
       "homepage": "mercedes-benz.com",
       "avatar": "mercedes-benz-logo.png",
@@ -180,6 +253,12 @@
       "homepage": "pbj.la",
       "avatar": "pbjla-logo.png",
       "walletAddress": "n37MqozpfLLipswMzRS7V6CbEnZVhsGYGq"
+    },
+    {
+      "name": "PharmEasy",
+      "homepage": "pharmeasy.com",
+      "avatar": "pharmeasy-logo.png",
+      "walletAddress": "msRDqJm8DzMJ297gqvXLyVioagnXr8XNgp"
     },
     {
       "name": "Porsche",
@@ -212,6 +291,18 @@
       "walletAddress": "mxw6X4A3dYMKwfN1FZbc4qTowMBDNEwkG1"
     },
     {
+      "name": "theobroma",
+      "homepage": "theobroma.com",
+      "avatar": "theobroma-logo.jpg",
+      "walletAddress": "mxw6X4A3dYMKwfN1FZbc4qTowMBDNEwkkG1"
+    },
+    {
+      "name": "Uber Eats",
+      "homepage": "ubereats.com",
+      "avatar": "uber-eats-logo.jpg",
+      "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
+    },
+    {
       "name": "ups",
       "homepage": "ups.com",
       "avatar": "ups-logo.png",
@@ -228,6 +319,12 @@
       "homepage": "zara.com",
       "avatar": "zara-logo.png",
       "walletAddress": "mgmZS5KhxTFVBAQX2HJ3p2dKhnsZp3hB7r"
+    },
+    {
+      "name": "Zomato",
+      "homepage": "zomato.com",
+      "avatar": "zomato-logo.png",
+      "walletAddress": "mxfzp7jTGpgAdBdCXrrg62Z3sPcrsQvu7o"
     }
   ]
 }

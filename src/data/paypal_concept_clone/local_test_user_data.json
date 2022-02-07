@@ -24,10 +24,14 @@
         "state": "Missouri",
         "country": "United States"
       },
-      "bankDetails": {
-        "bankName": "BANK OF AMERICA",
-        "bankBalance": "USD 43398"
-      },
+      "bankDetails": [
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "99293629",
+          "bankBalance": "143398.85",
+          "currency": "USD"
+        }
+      ],
       "walletAddress": "19UBFtiqTgcWXkrfPsq1G2NXQYcfPUyqsW"
     },
     {
@@ -54,10 +58,20 @@
         "state": "Ohio",
         "country": "United States"
       },
-      "bankDetails": {
-        "bankName": "CITIBANK",
-        "bankBalance": "USD 27206"
-      },
+      "bankDetails": [
+        {
+          "bankName": "CITI BANK",
+          "accountNumber": "19285107",
+          "bankBalance": "27206.81",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BARCLAYS",
+          "accountNumber": "21664761",
+          "bankBalance": "17911",
+          "currency": "USD"
+        }
+      ],
       "walletAddress": "1KYq2otLhqiJtmmz8YuCojUWFHjx21igP8"
     },
     {
@@ -84,10 +98,20 @@
         "state": "Colorado",
         "country": "United States"
       },
-      "bankDetails": {
-        "bankName": "WELLS FARGO BANK",
-        "bankBalance": "USD 19781"
-      },
+      "bankDetails": [
+        {
+          "bankName": "WELLS FARGO",
+          "accountNumber": "67767567",
+          "bankBalance": "19781",
+          "currency": "USD"
+        },
+        {
+          "bankName": "STANDARD CHARTERED",
+          "accountNumber": "04295132",
+          "bankBalance": "26300.78",
+          "currency": "USD"
+        }
+      ],
       "walletAddress": "1HTCJPQXnZyU6SeC3fQrN8KTePCsHx9XxA"
     },
     {
@@ -115,10 +139,20 @@
         "country": "United States"
       },
 
-      "bankDetails": {
-        "bankName": "J.P.MORGAN CHASE",
-        "bankBalance": "USD 17713"
-      },
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "64045463",
+          "bankBalance": "17713.60",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "42203582",
+          "bankBalance": "47534",
+          "currency": "USD"
+        }
+      ],
       "walletAddress": "189VSAfPdmAULvTyN4EiGj31gGQgUFwWWh"
     }
   ]

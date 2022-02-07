@@ -1,0 +1,28 @@
+{
+  "name": "Nabhodipta Garai",
+  "alias": "brownboycodes",
+  "bio": "app developer, puzzle lover, puzzle solver",
+  "avatar": "brownboycodes-avatar.png",
+  "socialNetworkingProfiles": [
+    {
+      "title": "GitHub",
+      "url": "https://github.com/brownboycodes",
+      "avatar": "github-recolorable.png"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://www.twitter.com/brownboycodes",
+      "avatar": "twitter-recolorable.png"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/brownboycodes",
+      "avatar": "linkedin-recolorable.png"
+    },
+    {
+      "title": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/brownboycodes",
+      "avatar": "buy-me-a-coffee-recolorable.png"
+    }
+  ]
+}
