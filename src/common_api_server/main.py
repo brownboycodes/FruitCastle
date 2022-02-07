@@ -68,6 +68,7 @@ def about_brownboycodes():
 def paypal_concept_data():
     return render_template("dashboard.html", py_sent_data="PayPal concept data")
 
+
 @app.route('/paypal-concept-data/app')
 def paypal_concept_data_about_app():
     retrieved_file_data = get_json_data(
@@ -219,7 +220,7 @@ def paypal_concept_data_v1_user_registration():
         fullName = request.json['fullname']
         emailId = request.json['emailId']
         username = request.json['username']
-        bank_account=request.json['bankAccount']
+        bank_account = request.json['bankAccount']
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
@@ -229,8 +230,8 @@ def paypal_concept_data_v1_user_registration():
             x for x in retrieved_file_data if x['email'] == emailId]
         if len(filtered_data) != 0:
             related_bank_account = [
-            y for y in filtered_data[0]['bankDetails'] if y['accountNumber'] == bank_account]
-            if len(related_bank_account)!=0:
+                y for y in filtered_data[0]['bankDetails'] if y['accountNumber'] == bank_account]
+            if len(related_bank_account) != 0:
                 successful_hash = jwt.encode(
                     {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
                 if filtered_data[0]['gender'] == "Female":
@@ -264,6 +265,7 @@ def paypal_concept_data_v1_user_verify_login():
     if request.method == 'GET':
         return jsonify({'error': 'this is a GET request'})
 
+
 @app.route("/paypal-concept-data/v1/user/verify-username", methods=['POST', 'GET'])
 def paypal_concept_data_v1_user_verify_username():
     if request.method == 'POST':
@@ -273,10 +275,10 @@ def paypal_concept_data_v1_user_verify_username():
         retrieved_file_data = get_json_data(
             "src/data/paypal_concept_clone/local_test_user_data.json")['users']
         filtered_data = [
-                x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
+            x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
         if len(filtered_data) != 0:
-            if filtered_data[0]['username']==requested_username:
-                return jsonify({"success":f"your username has been set to {requested_username}"})
+            if filtered_data[0]['username'] == requested_username:
+                return jsonify({"success": f"your username has been set to {requested_username}"})
             else:
                 return jsonify({'error': f'the username {requested_username} is not available'})
         else:
@@ -294,7 +296,8 @@ def paypal_concept_data_v1_all_transactions():
     if request.method == 'POST':
         token_status = json_token_validifier(request.json['hash'])
         if token_status != "invalid":
-            retrieved_file_data = get_json_data("src/data/paypal_concept_clone/transactions.json")
+            retrieved_file_data = get_json_data(
+                "src/data/paypal_concept_clone/transactions.json")
             return jsonify(retrieved_file_data)
         else:
             return jsonify({'error': "your session has expired please login again"})
@@ -309,7 +312,8 @@ def paypal_concept_data_v1_all_contacts():
     if request.method == 'POST':
         token_status = json_token_validifier(request.json['hash'])
         if token_status != "invalid":
-            retrieved_file_data = get_json_data("src/data/paypal_concept_clone/local_contacts.json")
+            retrieved_file_data = get_json_data(
+                "src/data/paypal_concept_clone/local_contacts.json")
             return jsonify(retrieved_file_data)
         else:
             return jsonify({'error': "your session has expired please login again"})
@@ -324,7 +328,8 @@ def paypal_concept_data_v1_available_cards():
     if request.method == 'POST':
         token_status = json_token_validifier(request.json['hash'])
         if token_status != "invalid":
-            retrieved_file_data = get_json_data("src/data/paypal_concept_clone/card_data.json")
+            retrieved_file_data = get_json_data(
+                "src/data/paypal_concept_clone/card_data.json")
             available_cards = retrieved_file_data['availableCards']
             random.shuffle(available_cards)
             number_of_cards = random.choice(range(1, 5))
@@ -364,7 +369,9 @@ def paypal_concept_data_v2_execute_transaction():
             transaction_status = random.choice(['successful', 'failed'])
             transaction_id = uuid4()
             transaction_date = datetime.now()
-            return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status, 'transactionID': transaction_id, 'transactionDate': transaction_date})
+            transaction_receipt['transactionID'] = transaction_id
+            transaction_receipt['transactionDate'] = transaction_date
+            return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status})
         else:
             return jsonify({'error': "your session has expired please login again"})
 
