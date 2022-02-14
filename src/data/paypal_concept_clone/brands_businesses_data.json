@@ -3,26 +3,38 @@
     {
       "name": "Adidas",
       "homepage": "adidas.com",
-      "avatar": "adidas-logo.png",
+      "avatar": "adidas-optimized-logo.png",
+      "walletAddress": "myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb"
+    },
+    {
+      "name": "airbnb",
+      "homepage": "airbnb.com",
+      "avatar": "airbnb-logo.png",
+      "walletAddress": "myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb"
+    },
+    {
+      "name": "All Day Baby LA",
+      "homepage": "alldaybabyla.com",
+      "avatar": "all-day-baby-logo.png",
       "walletAddress": "myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb"
     },
     {
       "name": "Amazon",
       "homepage": "amazon.com",
-      "avatar": "amazon-logo.png",
+      "avatar": "amazon-optimized-logo.png",
       "walletAddress": "muFgGrLdYgDRH4zXPMvgdGTiEhsLaMcqWW"
     },
     {
       "name": "Apple",
       "homepage": "apple.com",
-      "avatar": "apple-logo.png",
+      "avatar": "apple-optimized-logo.png",
       "walletAddress": "n2xbfYFk7Uq2t5WJM3YqY7KfiT4SQJiMU1"
     },
 
     {
       "name": "Audi",
       "homepage": "audi.com",
-      "avatar": "audi-logo.png",
+      "avatar": "audi-optimized-logo.png",
       "walletAddress": "n4LVf6MGP52tqrTWwMnwQQrjsqGtB1srWz"
     },
     {
@@ -34,7 +46,7 @@
     {
       "name": "blinkit",
       "homepage": "blinkit.com",
-      "avatar": "blinkit-logo.png",
+      "avatar": "blinkit-optimized-logo.png",
       "walletAddress": "mqAxGvsBvrehWPpmqRZrrhmgLru2m2zjJP"
     },
     {
@@ -64,7 +76,7 @@
     {
       "name": "Cartier",
       "homepage": "cartier.com",
-      "avatar": "cartier-logo.png",
+      "avatar": "cartier-optimized-logo.png",
       "walletAddress": "ms9is4919Ywnxg3WrxSPPK8U1MDM5VTB8h"
     },
     {
@@ -76,13 +88,13 @@
     {
       "name": "Chanel",
       "homepage": "chanel.com",
-      "avatar": "chanel-logo.png",
+      "avatar": "chanel-optimized-logo.png",
       "walletAddress": "mngicYVv3b1RVk3EZyR6dwDaMePp6hRZGe"
     },
     {
       "name": "Cheezzo by Pi",
       "homepage": "cheezzo.com",
-      "avatar": "cheezzo-by-pi-logo.png",
+      "avatar": "cheezzo-by-pi-optimized-logo.png",
       "walletAddress": "mtgaMaumrh2Twb9tx29n2wDCKeagUKPgB1"
     },
     {
@@ -97,17 +109,22 @@
       "avatar": "corona-logo.png",
       "walletAddress": "mpdfA2zNS4tqnraUxMcecG2K8pyjpZgYiw"
     },
-
+    {
+      "name": "COSTCO",
+      "homepage": "costco.com",
+      "avatar": "costco-logo.png",
+      "walletAddress": "mxYJNK1SHb5GDHNfoyVujZrDTTfWQGYwpX"
+    },
     {
       "name": "CRED",
       "homepage": "cred.club",
-      "avatar": "cred-black-logo.jpg",
+      "avatar": "cred-optimized-logo.png",
       "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
     },
     {
       "name": "cult.fit",
       "homepage": "cult.fit",
-      "avatar": "cult-fit-logo.jpg",
+      "avatar": "cult-fit-optimized-logo.jpg",
       "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
     },
     {
@@ -135,6 +152,12 @@
       "walletAddress": "mqG6oSbAU6R3bdLW6M4JPN27pUKNCFo3vD"
     },
     {
+      "name": "EREWHON",
+      "homepage": "erewhonmarket.com",
+      "avatar": "erewhon-logo.png",
+      "walletAddress": "mqG6oSbAU6R3bdLW6M4JPN27pUKNCFo3vD"
+    },
+    {
       "name": "FedEx",
       "homepage": "fedex.com",
       "avatar": "fedex-logo.png",
@@ -149,7 +172,7 @@
     {
       "name": "GUCCI",
       "homepage": "gucci.com",
-      "avatar": "gucci-logo.png",
+      "avatar": "gucci-optimized-logo.png",
       "walletAddress": "mt6wmB7r8QhJZUxRsRVsTSYEa8kiWiR2wJ"
     },
     {
@@ -185,7 +208,7 @@
     {
       "name": "JIMIS BURGER",
       "homepage": "facebook.com/jimisburger/",
-      "avatar": "jimis-burger-logo.jpg",
+      "avatar": "jimis-burger-optimized-logo.jpg",
       "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
     },
     {
@@ -197,7 +220,7 @@
     {
       "name": "KFC",
       "homepage": "kfc.com",
-      "avatar": "kfc-logo.png",
+      "avatar": "kfc-optimized-logo.png",
       "walletAddress": "mgbfeKrAnhLJVoABBxMFGAdgE8umpYN7Rx"
     },
     {
@@ -209,14 +232,14 @@
     {
       "name": "Louis Vuitton",
       "homepage": "louisvuitton.com",
-      "avatar": "louis-vuitton-logo.png",
+      "avatar": "louis-vuitton-optimized-logo.png",
       "walletAddress": "mkQf9Pi7dok4HfXagvpv9x58RkNGRYmmnc"
     },
     {
-      "name": "Marlboro",
-      "homepage": "marlboro.com",
-      "avatar": "marlboro-logo.png",
-      "walletAddress": "muxT9d4h5WDUmKBqfYUJk335VUXqNMp7qL"
+      "name": "lyft",
+      "homepage": "lyft.com",
+      "avatar": "lyft-logo.png",
+      "walletAddress": "mkQf9Pi7dok4HfXagvpv9x58RkNGRYmmnc"
     },
     {
       "name": "McDonalds",
@@ -239,13 +262,13 @@
     {
       "name": "Netflix",
       "homepage": "netflix.com",
-      "avatar": "netflix-logo.png",
+      "avatar": "netflix-optimized-logo.png",
       "walletAddress": "ms3BfCTczbJk63sajsQxCRn8Z4u4WyizSQ"
     },
     {
       "name": "Nike",
       "homepage": "nike.com",
-      "avatar": "nike-logo.png",
+      "avatar": "nike-optimized-logo.png",
       "walletAddress": "mxrjnecU7YpbYukcrHbBkXjAvUyTWCPhjk"
     },
     {
@@ -263,7 +286,7 @@
     {
       "name": "Porsche",
       "homepage": "porsche.com",
-      "avatar": "porsche-logo.png",
+      "avatar": "porsche-optimized-logo.png",
       "walletAddress": "mgDKxnwNpmxGSSZLryBG83LXVxKarXvQbi"
     },
     {
@@ -275,7 +298,7 @@
     {
       "name": "ROLEX",
       "homepage": "rolex.com",
-      "avatar": "rolex-logo.png",
+      "avatar": "rolex-optimized-logo.png",
       "walletAddress": "mgSwcbqL6B5GbTwA2YRG5c1rrXAu53xeUH"
     },
     {
@@ -303,6 +326,12 @@
       "walletAddress": "mvzMXfQZK6Y38LZmMkhNoYAJx3oXKStLiK"
     },
     {
+      "name": "Uber",
+      "homepage": "uber.com",
+      "avatar": "uber-optimized-logo.png",
+      "walletAddress": "mvuGPyg7wNdTuKVF5LSMwSZwG1PXcUEuqL"
+    },
+    {
       "name": "ups",
       "homepage": "ups.com",
       "avatar": "ups-logo.png",
@@ -317,7 +346,7 @@
     {
       "name": "ZARA",
       "homepage": "zara.com",
-      "avatar": "zara-logo.png",
+      "avatar": "zara-optimized-logo.png",
       "walletAddress": "mgmZS5KhxTFVBAQX2HJ3p2dKhnsZp3hB7r"
     },
     {
