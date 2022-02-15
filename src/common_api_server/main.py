@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, make_response, render_template
+from werkzeug.exceptions import HTTPException
 import json
 
 from flask_cors import CORS
@@ -30,25 +31,14 @@ def about_brownboycodes():
     return jsonify(retrieved_file_data)
 
 
-@app.errorhandler(404)
-def page_not_found(e):
+# ? COMMON ERROR HANDLER FOR ALL ROUTES
+
+@app.errorhandler(Exception)
+def handle_error(e):
+    error_code = 500
+    if isinstance(e, HTTPException):
+        error_code = e.code
     return make_response(
-        render_template("error_page.html", error_code="404"),
-        404
-    )
-
-
-@app.errorhandler(400)
-def page_not_found(e):
-    return make_response(
-        render_template("error_page.html", error_code="400"),
-        400
-    )
-
-
-@app.errorhandler(500)
-def page_not_found(e):
-    return make_response(
-        render_template("error_page.html", error_code="500"),
-        500
+        render_template("error_page.html", error_code=str(error_code)),
+        error_code
     )

@@ -23,7 +23,7 @@ src/common_api_server/client/dist/js/customDocs.js
 src/common_api_server/client/dist/js/testDocsView.js
 src/common_api_server/client/docs_view.html
 src/common_api_server/client/test_docs_view.html
-src/common_api_server/paypal_concept_data/
+
 src/common_api_server/test.py
 src/config
 
