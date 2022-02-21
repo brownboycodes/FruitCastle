@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, render_template
+from flask import Blueprint, abort, jsonify, render_template
 from src.common_api_server.paypal_concept_data.utilities import get_json_data
 
 from .v1.version_1 import v1
@@ -14,7 +14,8 @@ paypal_concept_data.register_blueprint(v2)
 
 @paypal_concept_data.route("/")
 def paypal_concept_data_home():
-    return render_template("dashboard.html", py_sent_data="PayPal concept data")
+    # return render_template("dashboard.html", py_sent_data="PayPal concept data")
+    abort(401)
 
 
 @paypal_concept_data.route('/app')

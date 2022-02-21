@@ -96,7 +96,7 @@ def paypal_concept_data_v1_available_cards():
             return jsonify({'error': "your session has expired please login again"})
 
 
-@v1.route('/docs')
+'''@v1.route('/docs')
 def paypal_concept_data_v1_docs():
-    return send_from_directory("../docs/paypal_concept_data/v1", "paypal_concept_data_v1_wiki.md")
+    return send_from_directory("../docs/paypal_concept_data/v1", "paypal_concept_data_v1_wiki.md")'''
 

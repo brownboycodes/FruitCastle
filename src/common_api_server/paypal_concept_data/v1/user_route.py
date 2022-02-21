@@ -11,6 +11,14 @@ user = Blueprint('user', __name__, static_url_path='/dist',
                  static_folder='../../client/dist', template_folder='client', url_prefix='/user')
 
 
+def get_avatar(gender):
+    if gender == "Female":
+        return random.choice(
+            female_image_filenames)
+    else:
+        return random.choice(
+            male_image_filenames)
+
 # ? PURPOSE: to allow an already logged in user to access their account if they have a valid token
 
 
@@ -29,12 +37,14 @@ def paypal_concept_data_v1_get_user_by_id(user_id):
                 filtered_data = [
                     x for x in retrieved_file_data if x['id'] == user_id]
                 if len(filtered_data) != 0:
-                    if filtered_data[0]['gender'] == "Female":
+                    '''if filtered_data[0]['gender'] == "Female":
                         filtered_data[0]['avatar'] = random.choice(
                             female_image_filenames)
                     else:
                         filtered_data[0]['avatar'] = random.choice(
-                            male_image_filenames)
+                            male_image_filenames)'''
+                    filtered_data[0]['avatar'] = get_avatar(
+                        filtered_data[0]['gender'])
                     login_response = {'user': filtered_data[0]}
                 else:
                     login_response = {'error': "user not found"}
@@ -65,12 +75,14 @@ def paypal_concept_data_v1_user_login():
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
                         {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
-                    if filtered_data[0]['gender'] == "Female":
+                    '''if filtered_data[0]['gender'] == "Female":
                         filtered_data[0]['avatar'] = random.choice(
                             female_image_filenames)
                     else:
                         filtered_data[0]['avatar'] = random.choice(
-                            male_image_filenames)
+                            male_image_filenames)'''
+                    filtered_data[0]['avatar'] = get_avatar(
+                        filtered_data[0]['gender'])
                     login_response = {
                         'hash': successful_hash, 'user': filtered_data[0]}
                 else:
@@ -85,12 +97,14 @@ def paypal_concept_data_v1_user_login():
                 if entered_password == filtered_data[0]['password']:
                     successful_hash = jwt.encode(
                         {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
-                    if filtered_data[0]['gender'] == "Female":
+                    '''if filtered_data[0]['gender'] == "Female":
                         filtered_data[0]['avatar'] = random.choice(
                             female_image_filenames)
                     else:
                         filtered_data[0]['avatar'] = random.choice(
-                            male_image_filenames)
+                            male_image_filenames)'''
+                    filtered_data[0]['avatar'] = get_avatar(
+                        filtered_data[0]['gender'])
                     login_response = {
                         'hash': successful_hash, 'user': filtered_data[0]}
                 else:
@@ -112,7 +126,7 @@ def paypal_concept_data_v1_user_registration():
         login_response = {'error': 'some error occurred'}
         fullName = request.json['fullname']
         emailId = request.json['emailId']
-        username = request.json['username']
+        address = request.json['address']
         bank_account = request.json['bankAccount']
         entered_password = request.json['password']
 
@@ -127,12 +141,8 @@ def paypal_concept_data_v1_user_registration():
             if len(related_bank_account) != 0:
                 successful_hash = jwt.encode(
                     {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(minutes=30)}, secret_key_jwt, algorithm="HS256")
-                if filtered_data[0]['gender'] == "Female":
-                    filtered_data[0]['avatar'] = random.choice(
-                        female_image_filenames)
-                else:
-                    filtered_data[0]['avatar'] = random.choice(
-                        male_image_filenames)
+                del filtered_data[0]['username']
+                del filtered_data[0]['avatar']
                 login_response = {
                     'hash': successful_hash, 'user': filtered_data[0]}
             else:
@@ -167,12 +177,14 @@ def paypal_concept_data_v1_user_verify_username():
         decoded_token = decode_json_token(encoded_token)
         if 'error' not in decoded_token:
             retrieved_file_data = get_json_data(
-            "src/data/paypal_concept_clone/local_test_user_data.json")['users']
+                "src/data/paypal_concept_clone/local_test_user_data.json")['users']
             filtered_data = [
                 x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
             if len(filtered_data) != 0:
                 if filtered_data[0]['username'] == requested_username:
-                    return jsonify({"success": f"your username has been set to {requested_username}"})
+                    filtered_data[0]['avatar'] = get_avatar(
+                        filtered_data[0]['gender'])
+                    return jsonify({"success": f"your username has been set to {requested_username}", 'user': filtered_data[0]})
                 else:
                     return jsonify({'error': f'the username {requested_username} is not available'})
         else:
