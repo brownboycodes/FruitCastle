@@ -47,8 +47,8 @@
     },
     {
       "name": "Vadim Demenko",
-      "header": "UI inspiration from the works of",
-      "avatar": "vadim-demenko.png",
+      "header": "UI inspiration",
+      "avatar": "vadim-demenko.jpgg",
 
       "socials": [
         {
@@ -79,6 +79,59 @@
         {
           "title": "UI Design",
           "url": "https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept",
+          "avatar": "freepik/graphic-design.png"
+        },
+        {
+          "title": "UI Design",
+          "url": "https://www.behance.net/gallery/103425255/PayPal-App-Redesign-Concept",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Ramakrishna Venkatesan",
+      "header": "UI inspiration",
+      "avatar": "ramakrishna-venkatesan.jpg",
+      "website": "https://ramakrishnaux.dribbble.com/",
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/RamakrishnaUX/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/RamakrishnaV",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/RamakrishnaUX",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/RamakrishnaUX",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ramakrishnaux",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/Ramakrishna.design",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "UI Design",
+          "url": "https://dribbble.com/shots/2187649-Credit-card-Checkout-flow-AMEX",
+          "avatar": "freepik/graphic-design.png"
+        },
+        {
+          "title": "UI Design",
+          "url": "https://www.behance.net/gallery/29003331/Checkout-Flow",
           "avatar": "freepik/graphic-design.png"
         }
       ]
