@@ -2,8 +2,8 @@ autopep8==1.6.0
 bidict==0.21.4
 click==8.0.3
 colorama==0.4.4
-dnspython==2.2.0
-eventlet==0.33.0
+dnspython==1.16.0
+eventlet==0.29.1
 Flask==2.0.2
 Flask-Cors==3.0.10
 Flask-SocketIO==4.3.2
