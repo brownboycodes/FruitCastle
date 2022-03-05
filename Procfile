@@ -1,1 +1,1 @@
-web: gunicorn -w 1 --threads 100 wsgi:app
+web: gunicorn --worker-class eventlet -w 1 wsgi:app
