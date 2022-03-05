@@ -1,5 +1,5 @@
 import re
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, render_template, request
 from datetime import datetime, timedelta, timezone
 import random
 

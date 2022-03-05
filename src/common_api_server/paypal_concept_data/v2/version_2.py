@@ -3,10 +3,11 @@ from datetime import datetime
 import random
 from uuid import uuid4
 from src.common_api_server.paypal_concept_data.utilities import get_json_data, json_token_validifier
+from .qr_code_interpretter import qr_code_interpretter
 
 v2 = Blueprint('v2', __name__, static_url_path='/dist',
                static_folder='../../client/dist', template_folder='client', url_prefix='/v2')
-
+v2.register_blueprint(qr_code_interpretter)
 
 @v2.route("/")
 def paypal_concept_data_v2():
@@ -46,7 +47,7 @@ def paypal_concept_data_v2_execute_transaction():
             transaction_receipt = request.json['transactionReceipt']
             transaction_status = random.choice(['successful', 'failed'])
             transaction_id = uuid4()
-            transaction_date = datetime.now()
+            transaction_date = datetime.now().isoformat()
             transaction_receipt['transactionID'] = transaction_id
             transaction_receipt['transactionDate'] = transaction_date
             return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status})

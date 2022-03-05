@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, make_response, render_template
 from werkzeug.exceptions import HTTPException
 import json
-
+from flask_socketio import SocketIO
 from flask_cors import CORS
 from .paypal_concept_data.paypal_concept_data import paypal_concept_data
 
@@ -10,6 +10,7 @@ app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 app.register_blueprint(paypal_concept_data)
 CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 
 def get_json_data(json_file_path):

@@ -1,88 +1,88 @@
 {
-    "availableCards":[
-        {
-            "cc_number": "3774 6772 2940 471",
-            "cvv":"706",
-            "cardPin": "4762",
-            "cardBrand": "AMERICAN EXPRESS",
-            "expiryDate": "02/2027"
-          },
-          {
-            "cc_number": "3484 0747 4175 021",
-            "cvv":"936",
-            "cardPin": "7543",
-            "cardBrand": "AMERICAN EXPRESS",
-            "expiryDate": "03/2023"
-          },
-          {
-            "cc_number": "3706 3381 8236 861",
-            "cvv":"717",
-            "cardPin": "7543",
-            "cardBrand": "AMERICAN EXPRESS",
-            "expiryDate": "09/2023"
-          },
-          {
-            "cc_number": "6011 8841 8808 3639",
-            "cvv":"717",
-            "cardPin": "2917",
-            "cardBrand": "DISCOVER",
-            "expiryDate": "03/2026"
-          },
-          {
-            "cc_number": "6011 2568 1713 9787",
-            "cvv":"619",
-            "cardPin": "2917",
-            "cardBrand": "DISCOVER",
-            "expiryDate": "01/2023"
-          },
-          {
-            "cc_number": "6011 8216 3509 2540",
-            "cvv":"313",
-            "cardPin": "2917",
-            "cardBrand": "DISCOVER",
-            "expiryDate": "09/2027"
-          },
-          {
-            "cc_number": "5433 7870 0781 0763",
-            "cvv":"717",
-            "cardPin": "7192",
-            "cardBrand": "MASTERCARD",
-            "expiryDate": "09/2024"
-          },
-          {
-            "cc_number": "5517 9127 7151 1608",
-            "cvv":"643",
-            "cardPin": "7192",
-            "cardBrand": "MASTERCARD",
-            "expiryDate": "05/2027"
-          },
-          {
-            "cc_number": "5392 8261 4682 2252",
-            "cvv":"112",
-            "cardPin": "7192",
-            "cardBrand": "MASTERCARD",
-            "expiryDate": "03/2027"
-          },
-          {
-            "cc_number": "4399 9625 1489 9360",
-            "cvv":"542",
-            "cardPin": "7543",
-            "cardBrand": "VISA",
-            "expiryDate": "05/2023"
-          },
-          {
-            "cc_number": "4547 6615 1603 8776",
-            "cvv":"509",
-            "cardPin": "7543",
-            "cardBrand": "VISA",
-            "expiryDate": "11/2022"
-          },
-          {
-            "cc_number": "4266 6584 0059 7114",
-            "cvv":"462",
-            "cardPin": "7543",
-            "cardBrand": "VISA",
-            "expiryDate": "06/2024"
-          }
-    ]
+  "availableCards": [
+    {
+      "cc_number": "3774 6772 2940 471",
+      "cvv": "706",
+      "cardPin": "4762",
+      "cardBrand": "AMERICAN EXPRESS",
+      "expiryDate": "02/27"
+    },
+    {
+      "cc_number": "3484 0747 4175 021",
+      "cvv": "936",
+      "cardPin": "7543",
+      "cardBrand": "AMERICAN EXPRESS",
+      "expiryDate": "03/23"
+    },
+    {
+      "cc_number": "3706 3381 8236 861",
+      "cvv": "717",
+      "cardPin": "7543",
+      "cardBrand": "AMERICAN EXPRESS",
+      "expiryDate": "09/23"
+    },
+    {
+      "cc_number": "6011 8841 8808 3639",
+      "cvv": "717",
+      "cardPin": "2917",
+      "cardBrand": "DISCOVER",
+      "expiryDate": "03/26"
+    },
+    {
+      "cc_number": "6011 2568 1713 9787",
+      "cvv": "619",
+      "cardPin": "2917",
+      "cardBrand": "DISCOVER",
+      "expiryDate": "01/23"
+    },
+    {
+      "cc_number": "6011 8216 3509 2540",
+      "cvv": "313",
+      "cardPin": "2917",
+      "cardBrand": "DISCOVER",
+      "expiryDate": "09/27"
+    },
+    {
+      "cc_number": "5433 7870 0781 0763",
+      "cvv": "717",
+      "cardPin": "7192",
+      "cardBrand": "MASTERCARD",
+      "expiryDate": "09/24"
+    },
+    {
+      "cc_number": "5517 9127 7151 1608",
+      "cvv": "643",
+      "cardPin": "7192",
+      "cardBrand": "MASTERCARD",
+      "expiryDate": "05/27"
+    },
+    {
+      "cc_number": "5392 8261 4682 2252",
+      "cvv": "112",
+      "cardPin": "7192",
+      "cardBrand": "MASTERCARD",
+      "expiryDate": "03/27"
+    },
+    {
+      "cc_number": "4399 9625 1489 9360",
+      "cvv": "542",
+      "cardPin": "7543",
+      "cardBrand": "VISA",
+      "expiryDate": "05/23"
+    },
+    {
+      "cc_number": "4547 6615 1603 8776",
+      "cvv": "509",
+      "cardPin": "7543",
+      "cardBrand": "VISA",
+      "expiryDate": "11/22"
+    },
+    {
+      "cc_number": "4266 6584 0059 7114",
+      "cvv": "462",
+      "cardPin": "7543",
+      "cardBrand": "VISA",
+      "expiryDate": "06/24"
+    }
+  ]
 }

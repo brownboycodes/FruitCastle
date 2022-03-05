@@ -4,7 +4,10 @@ import re
 
 import jwt
 
+
+
 # ? PURPOSE: for extracting json data from file
+
 
 def get_json_data(json_file_path):
     json_file = open(json_file_path, "r")
