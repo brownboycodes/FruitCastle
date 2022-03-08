@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from datetime import datetime
+from datetime import datetime, timezone
 import random
 from uuid import uuid4
 from src.common_api_server.paypal_concept_data.utilities import get_json_data, json_token_validifier
@@ -47,7 +47,8 @@ def paypal_concept_data_v2_execute_transaction():
             transaction_receipt = request.json['transactionReceipt']
             transaction_status = random.choice(['successful', 'failed'])
             transaction_id = uuid4()
-            transaction_date = datetime.now().isoformat()
+            
+            transaction_date = f'{datetime.now()}'
             transaction_receipt['transactionID'] = transaction_id
             transaction_receipt['transactionDate'] = transaction_date
             return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status})
