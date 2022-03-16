@@ -48,7 +48,7 @@
     {
       "name": "Vadim Demenko",
       "header": "UI inspiration",
-      "avatar": "vadim-demenko.jpgg",
+      "avatar": "vadim-demenko.jpg",
 
       "socials": [
         {
@@ -137,8 +137,178 @@
       ]
     },
     {
+      "name": "Nimasha Perera",
+      "header": "UI inspiration",
+      "avatar": "nimasha-perera.jpg",
+      "website": "https://www.nimashaperera.com/",
+      "socials": [
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/nimashasperera",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/nimasha_sperera/",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/nimasha_perera",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/nimashaperera/",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "Medium",
+          "url": "https://medium.com/@nimasha_perera",
+          "avatar": "ruslan_babkin/medium.png"
+        },
+        {
+          "title": "Creative Market",
+          "url": "https://creativemarket.com/nimasha.sperera",
+          "avatar": "freepik/creative-market-self-made.png"
+        },
+        {
+          "title": "UI Design",
+          "url": "https://dribbble.com/shots/3669170-Auto-Location-Switching-Transaction-Receipt",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Eslam Mohamed",
+      "header": "UI elements",
+      "avatar": "eslam-mohamed.jpg",
+      "website": "https://eslam.design/",
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/eslammo7amed/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/eslammohamedph",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/eslammo7amed",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/eslammohamedph",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "Tumblr",
+          "url": "https://eslammohamedph.tumblr.com/",
+          "avatar": "ruslan_babkin/tumblr.png"
+        },
+        {
+          "title": "Pinterest",
+          "url": "https://www.pinterest.com.au/eslammo7amed/_created/",
+          "avatar": "ruslan_babkin/pinterest.png"
+        },
+        {
+          "title": "Icon Design",
+          "url": "https://dribbble.com/shots/16028504-Paypal",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Mohamed Chahin",
+      "header": "UI elements",
+      "avatar": "mohamed-chahin.jpg",
+      "website": "https://dribbble.com/MohChahin",
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/mohamed_chahin/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/MChahin",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/MohChahin",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/beastochahin",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/BeastoChahin",
+          "avatar": "ruslan_babkin/facebook.png"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/mohchahin/",
+          "avatar": "ruslan_babkin/linkedin.png"
+        },
+        {
+          "title": "Vimeo",
+          "url": "https://vimeo.com/user47114870",
+          "avatar": "ruslan_babkin/vimeo.png"
+        },
+        
+        {
+          "title": "Icon Design",
+          "url": "https://dribbble.com/shots/17284897-Work-From-Home-Setup-Night",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
+      "name": "Yuliia Osadcha",
+      "header": "UI elements",
+      "avatar": "yuliia-osadcha.jpg",
+      "website": "https://linktr.ee/YuliiaOsadcha",
+      "socials": [
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/yuliiaosadcha/",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
+          "title": "Behance",
+          "url": "https://www.behance.net/yuliiaosadcha",
+          "avatar": "ruslan_babkin/behance.png"
+        },
+        {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/YuliiaOsadcha",
+          "avatar": "ruslan_babkin/dribbble.png"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/YuliiaOsadcha",
+          "avatar": "ruslan_babkin/twitter.png"
+        },
+        
+        {
+          "title": "Icon Design",
+          "url": "https://dribbble.com/shots/15636548-Online-shopping-at-the-best-prices",
+          "avatar": "freepik/graphic-design.png"
+        }
+      ]
+    },
+    {
       "name": "Ruslan Babkin",
-      "header": "Icons designed by ",
+      "header": "UI elements",
       "avatar": "ruslan-babkin.jpg",
       "website": "https://ruslanbabkin.com/",
       "socials": [
@@ -163,6 +333,11 @@
           "avatar": "freepik/flaticon.png"
         },
         {
+          "title": "Creative Market",
+          "url": "https://creativemarket.com/ruslanbabkin",
+          "avatar": "freepik/creative-market-self-made.png"
+        },
+        {
           "title": "Icon Design",
           "url": "https://www.flaticon.com/packs/social-media-163",
           "avatar": "freepik/graphic-design.png"
@@ -171,7 +346,7 @@
     },
     {
       "name": "Freepik",
-      "header": "Icons designed by",
+      "header": "UI elements",
       "avatar": "freepik-logo.png",
       "website": "https://www.freepik.com/",
       "socials": [
@@ -195,7 +370,7 @@
     {
       "name": "Nabhodipta Garai",
       "header": "App developed by",
-      "avatar": "brownboycodes-avatar.png",
+      "avatar": "brownboycodes.png",
       "website": "https://brownboycodes.vercel.app/",
       "socials": [
         {
@@ -209,6 +384,11 @@
           "avatar": "ruslan_babkin/twitter.png"
         },
         {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/brownboycodes",
+          "avatar": "ruslan_babkin/instagram.png"
+        },
+        {
           "title": "LinkedIn",
           "url": "https://www.linkedin.com/in/brownboycodes/",
           "avatar": "ruslan_babkin/linkedin.png"
@@ -219,14 +399,19 @@
           "avatar": "ruslan_babkin/facebook.png"
         },
         {
+          "title": "Reddit",
+          "url": "https://www.reddit.com/user/brownboycodes/posts/",
+          "avatar": "ruslan_babkin/reddit.png"
+        },
+        {
           "title": "source code for the Flutter app",
           "url": "https://github.com/brownboycodes/Paypal-Concept-Flutter",
-          "avatar": "programming/flutter"
+          "avatar": "programming/flutter-495057-centered.png"
         },
         {
           "title": "source code for the Flask server",
           "url": "https://github.com/brownboycodes/common-api-server",
-          "avatar": "programming/pycon-2019"
+          "avatar": "programming/python-language-logotype-1.png"
         }
       ]
     }
