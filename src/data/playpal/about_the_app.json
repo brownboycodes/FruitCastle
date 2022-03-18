@@ -92,7 +92,7 @@
       "name": "Ramakrishna Venkatesan",
       "header": "UI inspiration",
       "avatar": "ramakrishna-venkatesan.jpg",
-      "website": "https://ramakrishnaux.dribbble.com/",
+      "website": "https://dribbble.com/RamakrishnaUX",
       "socials": [
         {
           "title": "Instagram",
@@ -406,12 +406,12 @@
         {
           "title": "source code for the Flutter app",
           "url": "https://github.com/brownboycodes/Playpal",
-          "avatar": "programming/flutter-495057-centered.png"
+          "avatar": "programming/flutter-white-centered.png"
         },
         {
           "title": "source code for the Flask server",
           "url": "https://github.com/brownboycodes/common-api-server",
-          "avatar": "programming/python-language-logotype-1.png"
+          "avatar": "programming/python-language-logotype-2.png"
         }
       ]
     }
