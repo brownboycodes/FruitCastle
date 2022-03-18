@@ -1,0 +1,142 @@
+{
+  "transactions":[
+    {
+      "transactionType": "credit",
+      "transactionAmount": 500,
+      "transactionMemberName": "Dad",
+      "transactionDate": "2020-06-11 16:56:42",
+      "transactionID": "57ccfda9-7c35-4958-b4f3-fc6a534e7db7",
+      "transactionMemberWalletAddress":"mzrm4ozYta8pX8UNR11KtRQF3ubB9E4te7",
+      "transactionNote": "borrowed from Dad",
+      "transactionCategory": "family"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 750,
+      "transactionMemberName": "airbnb",
+      "transactionMemberBusinessWebsite":"airbnb.com",
+      "transactionMemberBusinessLogo":"airbnb-logo.png",
+      "transactionDate": "2020-07-09 18:23:27",
+      "transactionID": "a012c6cc-7919-411d-8f0b-d4324861bbec",
+      "transactionMemberWalletAddress":"myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb",
+      "transactionNote": "mini vacation",
+      "transactionCategory": "holidays"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 775.99,
+      "transactionMemberName": "Apple Store",
+      "transactionMemberBusinessWebsite":"apple.com",
+      "transactionMemberBusinessLogo":"apple-optimized-logo.png",
+      "transactionDate": "2020-08-26 21:25:43",
+      "transactionID": "fa25f5be-8906-4558-a70a-7a01fae616f5",
+      "transactionMemberWalletAddress":"n2xbfYFk7Uq2t5WJM3YqY7KfiT4SQJiMU1",
+      "transactionNote": "purchased Apple products",
+      "transactionCategory": "shopping"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 32.5,
+      "transactionMemberName": "Uber",
+      "transactionMemberBusinessWebsite":"uber.com",
+      "transactionMemberBusinessLogo":"uber-optimized-logo.png",
+      "transactionDate": "2020-09-26 12:30:32",
+      "transactionID": "6758d288-d685-4d5e-a9d6-bdb6ec840cde",
+      "transactionMemberWalletAddress":"mvuGPyg7wNdTuKVF5LSMwSZwG1PXcUEuqL",
+      "transactionNote": "cab fare",
+      "transactionCategory": "transport"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 127,
+      "transactionMemberName": "PBJ.LA",
+      "transactionMemberBusinessWebsite":"pbj.la",
+      "transactionMemberBusinessLogo":"pbjla-logo.png",
+      "transactionDate": "2020-10-02 13:42:34",
+      "transactionID": "45cbdd29-3794-4213-ae8d-057f227a257b",
+      "transactionMemberWalletAddress":"n37MqozpfLLipswMzRS7V6CbEnZVhsGYGq",
+      "transactionNote": "tasted all of their peanut butter and jam sandwiches",
+      "transactionCategory": "food"
+    },
+    {
+      "transactionType": "credit",
+      "transactionAmount": 3000,
+      "transactionMemberName": "Unknown",
+      "transactionDate": "2020-12-31 13:42:34",
+      "transactionID": "4469b4a2-d7e6-4e22-a054-f9b57d6268dc",
+      "transactionMemberWalletAddress":"n1dposKDbwKTLBnAF1nTpR45jYqshCUonk",
+      "transactionCategory": "unknown"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 488.60,
+      "transactionMemberName": "EREWHON",
+      "transactionMemberBusinessWebsite":"erewhonmarket.com",
+      "transactionMemberBusinessLogo":"erewhon-logo.png",
+      "transactionDate": "2021-01-01 16:55:49",
+      "transactionID": "6f008bb6-dd6c-45d4-be0a-0c26175bae43",
+      "transactionMemberWalletAddress":"n2xRv8qnFEgxam7v39VRbArDPsKeo4MF3P",
+      "transactionNote": "bread, milk, eggs, fruits, veggies etc.",
+      "transactionCategory": "groceries"
+    },
+    {
+      "transactionType": "credit",
+      "transactionAmount": 243.65,
+      "transactionMemberName": "Girlfriend",
+      "transactionDate": "2021-06-04 06:20:42",
+      "transactionID": "c1fa0899-9a35-4f81-b05c-17f01bf23295",
+      "transactionMemberWalletAddress":"mji7MsUNvb4tg5XXRR9TJXNQzZZLHh7fGP",
+      "transactionNote": "received for covering her bill share on our date at Grand Central Market",
+      "transactionCategory": "family",
+      "transactionMemberEmail":"you got back your money!! OK. now RUN!!!"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 127,
+      "transactionMemberName": "Costco Gas Station",
+      "transactionMemberBusinessWebsite":"costco.com",
+      "transactionMemberBusinessLogo":"costco-logo.jpg",
+      "transactionDate": "2021-07-13 14:55:32",
+      "transactionID": "7220869c-f05d-4d3a-8088-3718abd4cd82",
+      "transactionMemberWalletAddress":"mxYJNK1SHb5GDHNfoyVujZrDTTfWQGYwpX",
+      "transactionNote": "gas",
+      "transactionCategory": "transport"
+    },
+  
+    {
+      "transactionType": "debit",
+      "transactionAmount": 550,
+      "transactionMemberName": "Landlord",
+      "transactionDate": "2021-08-11 02:51:54",
+      "transactionID": "a4b058f1-9aae-47ea-b36d-5068705df0a6",
+      "transactionMemberWalletAddress":"n1yXTpYVuKpZzdMMFbMiXPdpaCjjihebky",
+      "transactionNote": "rent + electricity",
+      "transactionCategory": "home"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 292.45,
+      "transactionMemberName": "All Day Baby",
+      "transactionMemberBusinessWebsite":"alldaybabyla.com",
+      "transactionMemberBusinessLogo":"all-day-baby-optimized-logo.png",
+      "transactionDate": "2021-08-26 18:37:38",
+      "transactionID": "e8cbdfb3-ff7b-4f31-89c8-a6b34e113db2",
+      "transactionMemberWalletAddress":"myASTnfMV5Zh2t75gH7ap8JpJpm9QaEAsb",
+      "transactionNote": "dinner date bill split ",
+      "transactionCategory": "food"
+    },
+    {
+      "transactionType": "debit",
+      "transactionAmount": 585.99,
+      "transactionMemberName": "Amazon",
+      "transactionMemberBusinessWebsite":"amazon.com",
+      "transactionMemberBusinessLogo":"amazon-optimized-logo.png",
+      "transactionDate": "2021-12-22 09:32:26",
+      "transactionID": "96779dc8-bc0a-47c2-bc04-a4bbc1aac1e8",
+      "transactionMemberWalletAddress":"muFgGrLdYgDRH4zXPMvgdGTiEhsLaMcqWW",
+      "transactionNote": "holiday shopping",
+      "transactionCategory": "shopping"
+    }
+  ]
+  
+}
