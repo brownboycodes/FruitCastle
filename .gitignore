@@ -5,7 +5,7 @@ src/common_api_server/config
 src/config/__pycache__
 # src/common_api_server/client
 
-src/docs
+# src/docs
 run_dev_mode.py
 
 
