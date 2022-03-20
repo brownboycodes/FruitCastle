@@ -185,13 +185,13 @@
         {
           "bankName": "CHASE",
           "accountNumber": "64045463",
-          "bankBalance": "17713.60",
+          "bankBalance": "1771360",
           "currency": "USD"
         },
         {
           "bankName": "BANK OF AMERICA",
           "accountNumber": "42203582",
-          "bankBalance": "47534",
+          "bankBalance": "43544",
           "currency": "USD"
         }
       ],

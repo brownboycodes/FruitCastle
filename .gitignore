@@ -9,7 +9,7 @@ src/config/__pycache__
 run_dev_mode.py
 
 
-
+src/docs/playpal/app_docs/PLAYPAL_ANDROID_PRIVACY_POLICY.md
 
 src/common_api_server/client/dist/css/docs_style.css
 src/common_api_server/client/dist/css/test_docs_view.css
