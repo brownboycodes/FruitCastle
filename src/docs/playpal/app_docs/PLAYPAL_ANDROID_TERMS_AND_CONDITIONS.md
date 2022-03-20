@@ -1,6 +1,6 @@
 # TERMS & CONDITIONS
 
-Last updated: March 19, 2022
+Last updated: March 21, 2022
 
 1. PlayPal is not a fund transfer platform. It is a simulator, meaning it is to be used for mocking payments/fund-transfer-requests. The app has been developed it on display it on the portfolio of the app developer and the UI designers who have been mentioned in this document.
 
@@ -77,5 +77,6 @@ Last updated: March 19, 2022
 37. Anyone can share the app on any social networking platform and the source code, provided they also credit/acknowledge the people who made the app, such as, Nabhodita Garai (brownboycodes) for app development and Vadim Demenko, Ramakrishna Venkatesan and Nimasha Perera for designing the User Interface.
 
 38. PlayPal doesn't use a database hence data sent by user to the server through the PlayPal app such as payments, fund requests or addition of new card or creation of new user is not saved at all. Hence users are requested not to expect saving their data.
+39. Any attenmpt to alter the source code to harm the behavior/functioning of the PlayPal app will be considered an offence that would be met with severe consequences.
 
-39. The source code for PlayPal may or may not be updated depending upon people's interest.
+40. The source code for PlayPal may or may not be updated depending upon people's interest.
