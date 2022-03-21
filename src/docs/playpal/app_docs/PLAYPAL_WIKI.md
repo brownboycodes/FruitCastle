@@ -48,28 +48,28 @@ Since there isn't any database connected to the backend servers the feature of t
 
 The validation details to register/sign-up with a new PlayPal account are listed below :-
 
-| STEP | REQUIREMENTS                     | VALIDATION RULES                                                                                                                                                                                                         |
-| ---- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1    | full name<br>residential address | fields cannot be empty<br>input values of either fields do not need to match the exact details associated with the account                                                                                               |
-| 2    | email address<br>password        | fields cannot be empty<br>input value of email address should match the exact details associated with the account<br>input values of password field does not need to match the exact details associated with the account |
-| 3    | bank account number              | field cannot be empty<br>input value of bank account number field should match the exact details associated with the account                                                                                             |
-| 4    | username                         | field cannot be empty<br>input value of username field should match the exact details associated with the account                                                                                                        |
+| STEP | REQUIREMENTS                      | VALIDATION RULES                                                                                                                                                                                                     |
+| ---- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | full name <br>residential address | fields cannot be empty  <br>input values of either fields do not need to match the exact details associated with the account                                                                                         |
+| 2    | email address  <br>password       | fields cannot be empty  input value of email address should match the exact details associated with the account  input values of password field does not need to match the exact details associated with the account |
+| 3    | bank account number               | field cannot be empty  input value of bank account number field should match the exact details associated with the account                                                                                           |
+| 4    | username                          | field cannot be empty  input value of username field should match the exact details associated with the account                                                                                                      |
 
 The required details to register/sign-up with a new PlayPal account are listed below :-
 
-| NAME             | EMAIL ID                           | BANK ACCOUNT NUMBER  | USERNAME             |
-| ---------------- | ---------------------------------- | -------------------- | -------------------- |
-| Mary Kertzmann   | mary.kertzmann@notillegal.org      | 99293629             | mary.kertzmann       |
-| Rusty Abshire    | rusty.abshire@unfailedstartup.io   | 19285107<br>21664761 | rusty.abshire        |
-| Dante Vandervort | dante.vandervort@junkstuff.net     | 67767567<br>04295132 | dante.vandervort     |
-| Damion Jerde     | damion.jerde@costlyhotel.com       | 64045463<br>42203582 | damion.jerde         |
-| Bruce Wayne      | dark.knight@wayneenterprises.com   | 47911045<br>19826115 | the.batman           |
-| Tony Stark       | tonystank@starkindustries.com      | 39753176<br>61428607 | iamironman           |
-| Ryan Reynolds    | deapool@mcu.finally                | 40429859<br>53421343 | freeguy              |
-| Meilin Lee       | mei@turning.red                    | 50881774<br>11045853 | WeAllHaveAInnerBeast |
-| Diana Prince     | queen@amazon.race                  | 30646421<br>39108502 | wonderwoman          |
-| Selina Kyle      | jewelthief@gotham.city             | 27772507<br>36995137 | catwoman             |
-| Natasha Romanoff | natalierushman@starkindustries.com | 36841177<br>10783270 | daughterOfIvan       |
+| NAME             | EMAIL ID                           | BANK ACCOUNT NUMBER | USERNAME             |
+| ---------------- | ---------------------------------- | ------------------- | -------------------- |
+| Mary Kertzmann   | mary.kertzmann@notillegal.org      | 99293629            | mary.kertzmann       |
+| Rusty Abshire    | rusty.abshire@unfailedstartup.io   | 19285107 21664761   | rusty.abshire        |
+| Dante Vandervort | dante.vandervort@junkstuff.net     | 67767567 04295132   | dante.vandervort     |
+| Damion Jerde     | damion.jerde@costlyhotel.com       | 64045463 42203582   | damion.jerde         |
+| Bruce Wayne      | dark.knight@wayneenterprises.com   | 47911045 19826115   | the.batman           |
+| Tony Stark       | tonystank@starkindustries.com      | 39753176 61428607   | iamironman           |
+| Ryan Reynolds    | deapool@mcu.finally                | 40429859 53421343   | freeguy              |
+| Meilin Lee       | mei@turning.red                    | 50881774 11045853   | WeAllHaveAInnerBeast |
+| Diana Prince     | queen@amazon.race                  | 30646421 39108502   | wonderwoman          |
+| Selina Kyle      | jewelthief@gotham.city             | 27772507 36995137   | catwoman             |
+| Natasha Romanoff | natalierushman@starkindustries.com | 36841177 10783270   | daughterOfIvan       |
 
 Trying to gain access using details/values other than the ones mentioned above to sign up/register a new user will result in the server responding with an error of - *"account already exists with the details provided"*
 
