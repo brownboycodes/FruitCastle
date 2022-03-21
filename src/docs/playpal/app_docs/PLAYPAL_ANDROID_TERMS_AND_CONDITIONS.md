@@ -2,13 +2,13 @@
 
 Last updated: March 21, 2022
 
-1. PlayPal is not a fund transfer platform. It is a simulator, meaning it is to be used for mocking payments/fund-transfer-requests. The app has been developed it on display it on the portfolio of the app developer and the UI designers who have been mentioned in this document.
+1. PlayPal is not a fund transfer platform. The current PlayPal can be described as the demo version/prototype of what the actual product might be/behave like, at best it can be also described as a simulator, meaning it is to be used for mocking payments/fund-transfer-requests. The app has been developed it on display it on the portfolio of the app developer and the UI designers who have been mentioned in this document.
 
 2. PlayPal is not made for commercial use.
 
 3. PlayPal is a free app, meaning doesn't involve any payment to install/use or any in-app purchases and runs without showing ads, hence no revenue is being generated from advertisement or any other means.
 
-4. PlayPal was inspired from the designs of Vadim Demenko, and transformed into functioning application with programs witten by Nabhodipta Garai (brownboycodes) and it is not the original PayPal fund transfer platform, or it pretends to be or a plagiarized version of it. It is a simulator, for mocking payment mechanism.
+4. PlayPal was inspired from the designs of Vadim Demenko, and transformed into functioning application with programs witten by Nabhodipta Garai (brownboycodes) and it is not the original PayPal fund transfer platform, or it pretends to be or a plagiarized version of it. The current PlayPal can be described as the demo version/prototype of what the actual product might be/behave like, at best it can be also described as a simulator, for mocking payment mechanism.
 
 5. PlayPal can be used in the portfolio of Nabhodipta Garai (brownboycodes) for developing the app (both frontend and backend).
 
@@ -66,17 +66,20 @@ Last updated: March 21, 2022
 
 32. PlayPal uses considerable amount of memory and hard disk space and this is an experimental app, hence users are requested to the maker of this app cannot be held responsible/accountable for any kind of damage to your device after installation or while using the app.
 
-33. PlayPal must not be used to mislead people into thinking it is a real payment/fund-transfer platform or any kind of other misleading applications.
+33. If anyone shares/shares/creates positive content about PlayPal on any social networking or any media streaming platforms, then that content can be used to promote PlayPal without any monetory compensation being offered to that content creator.
 
-34. Screenshots or morphed/altered/tampered/edited images of PlayPal must not be used to mislead people.
+34. PlayPal must not be used to mislead people into thinking it is a real payment/fund-transfer platform or any kind of other misleading applications.
 
-35. People/Organizations who may use or intend to use PlayPal for misleading or scammming people will be met with serious legal and monetory consequences.
+35. Screenshots or morphed/altered/tampered/edited images of PlayPal must not be used to mislead people.
 
-36. PlayPal has been built using the Dart language and the Flutter framework on the frontend side and the backend service where it fetches the data from has been built using the Python language and the Flask framework.
+36. People/Organizations who may use or intend to use PlayPal for misleading or scammming people will be met with serious legal and monetory consequences.
 
-37. Anyone can share the app on any social networking platform and the source code, provided they also credit/acknowledge the people who made the app, such as, Nabhodita Garai (brownboycodes) for app development and Vadim Demenko, Ramakrishna Venkatesan and Nimasha Perera for designing the User Interface.
+37. PlayPal has been built using the Dart language and the Flutter framework on the frontend side and the backend service where it fetches the data from has been built using the Python language and the Flask framework.
 
-38. PlayPal doesn't use a database hence data sent by user to the server through the PlayPal app such as payments, fund requests or addition of new card or creation of new user is not saved at all. Hence users are requested not to expect saving their data.
-39. Any attenmpt to alter the source code to harm the behavior/functioning of the PlayPal app will be considered an offence that would be met with severe consequences.
+38. Anyone can share the app on any social networking platform and the source code, provided they also credit/acknowledge the people who made the app, such as, Nabhodita Garai (brownboycodes) for app development and Vadim Demenko, Ramakrishna Venkatesan and Nimasha Perera for designing the User Interface.
 
-40. The source code for PlayPal may or may not be updated depending upon people's interest.
+39. PlayPal doesn't use a database hence data sent by user to the server through the PlayPal app such as payments, fund requests or addition of new card or creation of new user is not saved at all. Hence users are requested not to expect saving their data.
+
+40. Any attempt to alter the source code to harm the behavior/functioning of the PlayPal app will be considered an offence that would be met with severe consequences.
+
+41. The source code for PlayPal may or may not be updated depending upon people's interest.
