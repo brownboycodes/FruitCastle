@@ -48,12 +48,12 @@ Since there isn't any database connected to the backend servers the feature of t
 
 The validation details to register/sign-up with a new PlayPal account are listed below :-
 
-| STEP | REQUIREMENTS                   | VALIDATION RULES                                                                                                                                                                                                     |
-| ---- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | full name  residential address | fields cannot be empty  input values of either fields do not need to match the exact details associated with the account                                                                                             |
-| 2    | email address  password       | fields cannot be empty  input value of email address should match the exact details associated with the account  input values of password field does not need to match the exact details associated with the account |
-| 3    | bank account number            | field cannot be empty  input value of bank account number field should match the exact details associated with the account                                                                                            |
-| 4    | username                       | field cannot be empty  input value of username field should match the exact details associated with the account                                                                                                       |
+| STEP | REQUIREMENTS                      | VALIDATION RULES                                                                                                                                                                                                     |
+| ---- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | full name <br>residential address | fields cannot be empty  input values of either fields do not need to match the exact details associated with the account                                                                                             |
+| 2    | email address  password           | fields cannot be empty  input value of email address should match the exact details associated with the account  input values of password field does not need to match the exact details associated with the account |
+| 3    | bank account number               | field cannot be empty  input value of bank account number field should match the exact details associated with the account                                                                                           |
+| 4    | username                          | field cannot be empty  input value of username field should match the exact details associated with the account                                                                                                      |
 
 The required details to register/sign-up with a new PlayPal account are listed below :-
 
