@@ -1,6 +1,6 @@
-Last updated: March 21, 2022
+Last updated: March 25, 2022
 
-> Since there isn't any database connected to the backend servers the feature of truly creating new PlayPal accounts and using them to login is unavailable. The current PlayPal can be described as the demo version/prototype of what the actual product might be/behave like. 
+> Since there isn't any database connected to the backend servers the feature of truly creating new PlayPal accounts and using them to login is unavailable. The current PlayPal can be described as a demo-version/prototype of what the actual product might be/behave like. 
 > 
 > This condition may or may not change in the future.
 
@@ -20,10 +20,10 @@ The required details of all the available accounts to login to are listed below 
 
 | NAME             | USERNAME             | EMAIL ID                           | PASSWORD                |
 | ---------------- | -------------------- | ---------------------------------- | ----------------------- |
-| Mary Kertzmann   | mary.kertzmann       | mary.kertzmann@notillegal.org      | yCvGZpBQM1              |
-| Rusty Abshire    | rusty.abshire        | rusty.abshire@unfailedstartup.io   | rV0PHIXKZi              |
-| Dante Vandervort | dante.vandervort     | dante.vandervort@junkstuff.net     | UtiQ4zxghZ              |
-| Damion Jerde     | damion.jerde         | damion.jerde@costlyhotel.com       | ktP3EjKTIl              |
+| Mary Kertzmann   | mary.kertzmann       | mary.kertzmann@notillegal.org      | deer                    |
+| Rusty Abshire    | rusty.abshire        | rusty.abshire@unfailedstartup.io   | parrot                  |
+| Dante Vandervort | dante.vandervort     | dante.vandervort@junkstuff.net     | tiger                   |
+| Damion Jerde     | damion.jerde         | damion.jerde@costlyhotel.com       | chicken                 |
 | Bruce Wayne      | the.batman           | dark.knight@wayneenterprises.com   | aSymbol                 |
 | Tony Stark       | iamironman           | tonystank@starkindustries.com      | LoveU3000               |
 | Ryan Reynolds    | freeguy              | deapool@mcu.finally                | FirstDatesAreInterviews |
@@ -48,28 +48,28 @@ Since there isn't any database connected to the backend servers the feature of t
 
 The validation details to register/sign-up with a new PlayPal account are listed below :-
 
-| STEP | REQUIREMENTS                       | VALIDATION RULES                                                                                                                                                                                                              |
-| ---- |:---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | full name<br />residential address | fields cannot be empty<br />input values of either fields do not need to match the exact details associated with the account                                                                                                  |
-| 2    | email address  <br />password      | fields cannot be empty <br />input value of email address should match the exact details associated with the account<br />input values of password field does not need to match the exact details associated with the account |
-| 3    | bank account number                | field cannot be empty<br />input value of bank account number field should match the exact details associated with the account                                                                                                |
-| 4    | username                           | field cannot be empty<br />input value of username field should match the exact details associated with the account                                                                                                           |
+| STEP | REQUIREMENTS                        | VALIDATION RULES                                                                                                                                                                                                                  |
+| ---- |:----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | full name<br /> residential address | fields cannot be empty <br /> input values of either fields do not need to match the exact details associated with the account                                                                                                    |
+| 2    | email address  <br /> password      | fields cannot be empty  <br /> input value of email address should match the exact details associated with the account <br /> input values of password field does not need to match the exact details associated with the account |
+| 3    | bank account number                 | field cannot be empty <br /> input value of bank account number field should match the exact details associated with the account                                                                                                  |
+| 4    | username                            | field cannot be empty <br /> input value of username field should match the exact details associated with the account                                                                                                             |
 
 The required details to register/sign-up with a new PlayPal account are listed below :-
 
-| NAME             | EMAIL ID                           | BANK ACCOUNT NUMBER | USERNAME             |
-| ---------------- | ---------------------------------- | ------------------- | -------------------- |
-| Mary Kertzmann   | mary.kertzmann@notillegal.org      | 99293629            | mary.kertzmann       |
-| Rusty Abshire    | rusty.abshire@unfailedstartup.io   | 19285107<br />21664761   | rusty.abshire        |
-| Dante Vandervort | dante.vandervort@junkstuff.net     | 67767567<br />04295132   | dante.vandervort     |
-| Damion Jerde     | damion.jerde@costlyhotel.com       | 64045463 42203582   | damion.jerde         |
-| Bruce Wayne      | dark.knight@wayneenterprises.com   | 47911045 19826115   | the.batman           |
-| Tony Stark       | tonystank@starkindustries.com      | 39753176 61428607   | iamironman           |
-| Ryan Reynolds    | deapool@mcu.finally                | 40429859 53421343   | freeguy              |
-| Meilin Lee       | mei@turning.red                    | 50881774 11045853   | WeAllHaveAInnerBeast |
-| Diana Prince     | queen@amazon.race                  | 30646421 39108502   | wonderwoman          |
-| Selina Kyle      | jewelthief@gotham.city             | 27772507 36995137   | catwoman             |
-| Natasha Romanoff | natalierushman@starkindustries.com | 36841177 10783270   | daughterOfIvan       |
+| NAME             | EMAIL ID                           | BANK ACCOUNT NUMBER      | USERNAME             |
+| ---------------- | ---------------------------------- | ------------------------ | -------------------- |
+| Mary Kertzmann   | mary.kertzmann@notillegal.org      | 99293629                 | mary.kertzmann       |
+| Rusty Abshire    | rusty.abshire@unfailedstartup.io   | 19285107 <br /> 21664761 | rusty.abshire        |
+| Dante Vandervort | dante.vandervort@junkstuff.net     | 67767567 <br /> 04295132 | dante.vandervort     |
+| Damion Jerde     | damion.jerde@costlyhotel.com       | 64045463 42203582        | damion.jerde         |
+| Bruce Wayne      | dark.knight@wayneenterprises.com   | 47911045 19826115        | the.batman           |
+| Tony Stark       | tonystank@starkindustries.com      | 39753176 61428607        | iamironman           |
+| Ryan Reynolds    | deapool@mcu.finally                | 40429859 53421343        | freeguy              |
+| Meilin Lee       | mei@turning.red                    | 50881774 11045853        | WeAllHaveAInnerBeast |
+| Diana Prince     | queen@amazon.race                  | 30646421 39108502        | wonderwoman          |
+| Selina Kyle      | jewelthief@gotham.city             | 27772507 36995137        | catwoman             |
+| Natasha Romanoff | natalierushman@starkindustries.com | 36841177 10783270        | daughterOfIvan       |
 
 Trying to gain access using details/values other than the ones mentioned above to sign up/register a new user will result in the server responding with an error of - *"account already exists with the details provided"*
 
