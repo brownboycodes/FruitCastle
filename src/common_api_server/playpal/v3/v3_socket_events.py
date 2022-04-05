@@ -9,7 +9,7 @@ def username_requested(username, hash):
     username_status = False
     profile_pic = 'NONE'
     decoded_token = decode_json_token(hash)
-    if 'error' not in decoded_token:
+    if 'error' not in "".join(decoded_token.keys()).lower():
         retrieved_file_data = get_json_data(
             "src/data/playpal/local_test_user_data.json")['users']
         filtered_data = [
@@ -31,4 +31,4 @@ def username_requested(username, hash):
         emit('username status', (username_status, profile_pic),
              namespace='/playpal/v3')
     else:
-        emit('error', 'something went really wrong', namespace='/playpal/v3')
+        emit('error', 'something went wrong', namespace='/playpal/v3')

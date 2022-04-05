@@ -78,13 +78,13 @@ def playpal_v3_get_user_by_id(user_id):
                             filtered_data[0]['gender'])
                     login_response = {'user': filtered_data[0]}
                 else:
-                    login_response = {'error': "user not found"}
+                    login_response = {'authenticationError': "user not found"}
             else:
                 login_response = {
-                    'error': "access denied! suspicious login detected"}
+                    'corruptedTokenError': "access denied! suspicious login detected"}
         else:
             login_response = {
-                'error': "session is invalid, please login again"}
+                'apiAuthorizationError': "session is invalid, please login again"}
     return jsonify(login_response)
 
 # ? PURPOSE: to allow the user to access their account when they sign in from their device
@@ -93,7 +93,7 @@ def playpal_v3_get_user_by_id(user_id):
 @user_v3.route("/login", methods=['POST', 'GET'])
 def playpal_v3_user_login():
     if request.method == 'POST':
-        login_response = {'error': 'some error occurred'}
+        login_response = {'error': 'something went wrong'}
         username_or_email = request.json['userInput']
         entered_password = request.json['password']
 
@@ -118,10 +118,10 @@ def playpal_v3_user_login():
                     login_response = {
                         'hash': successful_hash, 'user': filtered_data[0]}
                 else:
-                    login_response = {'error': "incorrect password"}
+                    login_response = {'authenticationError': "incorrect password"}
             else:
                 login_response = {
-                    'error': "no account found with the email address provided"}
+                    'authenticationError': "no account found with the email address provided"}
         else:
             filtered_data = [
                 x for x in retrieved_file_data if x['username'] == username_or_email]
@@ -141,10 +141,10 @@ def playpal_v3_user_login():
                     login_response = {
                         'hash': successful_hash, 'user': filtered_data[0]}
                 else:
-                    login_response = {'error': "incorrect password"}
+                    login_response = {'authenticationError': "incorrect password"}
             else:
                 login_response = {
-                    'error': "no account found with the username provided"}
+                    'authenticationError': "no account found with the username provided"}
         return jsonify(login_response)
 
     if request.method == 'GET':
@@ -157,7 +157,7 @@ def playpal_v3_user_verify_username():
         encoded_token = request.json['hash']
         requested_username = request.json['username']
         decoded_token = decode_json_token(encoded_token)
-        if 'error' not in decoded_token:
+        if 'error' not in "".join(decoded_token.keys()).lower():
             retrieved_file_data = get_json_data(
                 "src/data/playpal/local_test_user_data.json")['users']
             filtered_data = [

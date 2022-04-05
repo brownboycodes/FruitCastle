@@ -35,7 +35,7 @@ def playpal_v3_all_contacts():
 
             return jsonify({"contacts": filtered_contact_data})
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 """
 @v3.route("/active-socket")

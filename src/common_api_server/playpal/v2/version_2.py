@@ -29,7 +29,7 @@ def playpal_v2_businesses_and_brands():
                 "src/data/playpal/brands_businesses_data.json")
             return jsonify(retrieved_file_data)
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 
 # ? PURPOSE: for executing transaction
@@ -45,7 +45,8 @@ def playpal_v2_execute_transaction():
         print(token_status)
         if token_status != "invalid":
             transaction_receipt = request.json['transactionReceipt']
-            transaction_status = random.choice(['successful', 'failed'])
+            # ? MANIPULATING RANDOMNESS TO OBTAIN 66.666 % POSITIVE OUTCOME
+            transaction_status = random.choice(['successful','successful', 'failed'])
             transaction_id = uuid4()
             
             transaction_date = f'{datetime.now()}'
@@ -53,6 +54,6 @@ def playpal_v2_execute_transaction():
             transaction_receipt['transactionDate'] = transaction_date
             return jsonify({'transactionReceipt': transaction_receipt, 'transactionStatus': transaction_status})
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 
