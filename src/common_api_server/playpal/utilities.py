@@ -60,9 +60,9 @@ def decode_json_token(encoded_token):
             encoded_token, secret_key_jwt, algorithms=["HS256"])
         return decoded_token
     except jwt.ExpiredSignatureError:
-        return {'error': "your session has expired please login again"}
+        return {'apiAuthorizationError': "your session has expired please login again"}
     except jwt.InvalidTokenError:
-        return {'error': 'suspicious activity detected'}
+        return {'corruptedTokenError': 'suspicious activity detected'}
 
 
 def json_token_validifier(encoded_token):

@@ -27,7 +27,7 @@ def playpal_v1_all_data():
             retrieved_file_data = get_json_data("src/data/users.json")
             return jsonify(retrieved_file_data)
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 
 @v1.route("/all-users", methods=['POST', 'GET'])
@@ -41,7 +41,7 @@ def playpal_v1_all_users():
                 "src/data/playpal/local_test_user_data.json")
             return jsonify(retrieved_file_data)
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 
 # ? PURPOSE: for extracting transaction records
@@ -58,7 +58,7 @@ def playpal_v1_all_transactions():
                 "src/data/playpal/transactions.json")
             return jsonify(retrieved_file_data)
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 # ? PURPOSE: for extracting contacts of the user
 
@@ -74,7 +74,7 @@ def playpal_v1_all_contacts():
                 "src/data/playpal/local_contacts.json")
             return jsonify(retrieved_file_data)
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 # ? PURPOSE: for retrieving cards available for the user
 
@@ -90,10 +90,10 @@ def playpal_v1_available_cards():
                 "src/data/playpal/card_data.json")
             available_cards = retrieved_file_data['availableCards']
             random.shuffle(available_cards)
-            number_of_cards = random.choice(range(1, 5))
+            number_of_cards = random.choice(range(1, 3))
             return jsonify({'availableCards': available_cards[:number_of_cards]})
         else:
-            return jsonify({'error': "your session has expired please login again"})
+            return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
 
 '''@v1.route('/docs')

@@ -80,17 +80,6 @@
       "transactionCategory": "groceries"
     },
     {
-      "transactionType": "credit",
-      "transactionAmount": 243.65,
-      "transactionMemberName": "Girlfriend",
-      "transactionDate": "2021-06-04 06:20:42",
-      "transactionID": "c1fa0899-9a35-4f81-b05c-17f01bf23295",
-      "transactionMemberWalletAddress":"mji7MsUNvb4tg5XXRR9TJXNQzZZLHh7fGP",
-      "transactionNote": "received for covering her bill share on our date at Grand Central Market",
-      "transactionCategory": "family",
-      "transactionMemberEmail":"you got back your money!! OK. now RUN!!!"
-    },
-    {
       "transactionType": "debit",
       "transactionAmount": 127,
       "transactionMemberName": "Costco Gas Station",
