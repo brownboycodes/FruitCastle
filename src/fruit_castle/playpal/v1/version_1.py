@@ -1,7 +1,7 @@
 import random
 
 from flask import Blueprint, jsonify, send_from_directory, request
-from src.common_api_server.playpal.utilities import get_json_data, json_token_validifier
+from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 
 from .user_route import user
 

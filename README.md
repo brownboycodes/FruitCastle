@@ -1,10 +1,10 @@
-# Common API Server
+# Fruit Castle :apple::tangerine::grapes::watermelon::pineapple::european_castle:
 
-This is a web application to act as a **common Backend Service** for hosting API endpoints and its corresponding data that is intended for being used by various multiple cross-platform and web apps.
+**Fruit Castle** is a web application built with Flask and Python intended to act as a **common Backend Server** for hosting API endpoints and its corresponding data that is intended for being used by various multiple cross-platform and web apps.
 
 ## View deployed app  🚀🎉🎊
 
-[https://commonapiserver.herokuapp.com/](https://commonapiserver.herokuapp.com/ "Common Backend Service for hosting API and data")
+[https://fruitcastle.herokuapp.com/](https://fruitcastle.herokuapp.com/ "Common Backend Service for hosting API and data")
 
 <br>
 <p align="center">
@@ -16,13 +16,13 @@ This is a web application to act as a **common Backend Service** for hosting API
 Clone the repo to your computer, execute to the following commands in CMD or Bash:
 
 ```bash
-git clone https://github.com/brownboycodes/common-api-server.git
+git clone https://github.com/brownboycodes/FruitCastle.git
 ```
 
 access the downloaded directory 📁:
 
 ```bash
-cd common-api-server
+cd FruitCastle
 ```
 
 setup virtual environment for Python 🐍:
@@ -46,8 +46,8 @@ pip install -r requirements.txt
 To test the server in `dev mode` 👨‍💻, create a file, for example- `run_dev_mode.py` and paste the following code 🐍:
 
 ```python
-from src.common_api_server.main import app, socketio
-from src.common_api_server.playpal.v3.v3_socket_events import *
+from src.fruit_castle.main import app, socketio
+from src.fruit_castle.playpal.v3.v3_socket_events import *
 
 
 if __name__ == "__main__":
@@ -70,6 +70,4 @@ py run_dev_mode.py
 
 ---
 
-> [Common API Server](https://commonapiserver.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
-
-
+> [Fruit Castle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.

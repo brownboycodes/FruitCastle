@@ -10,7 +10,8 @@ from .playpal.playpal import playpal
 app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 app.register_blueprint(playpal)
-Compress(app)
+compress=Compress()
+compress.init_app(app)
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 

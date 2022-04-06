@@ -1,5 +1,5 @@
 from flask import Blueprint, abort, jsonify, render_template
-from src.common_api_server.playpal.utilities import get_json_data
+from src.fruit_castle.playpal.utilities import get_json_data
 
 from .v1.version_1 import v1
 from .v2.version_2 import v2

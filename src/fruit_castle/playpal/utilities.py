@@ -16,36 +16,36 @@ def get_json_data(json_file_path):
     return json_file_parsed
 
 male_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/male'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/male'), (None, None, []))[2]
 
 female_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/female'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/female'), (None, None, []))[2]
 
 
 # ? FEMALE CHARACTERS
 turning_red_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/female/characters/turning_red'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/female/characters/turning_red'), (None, None, []))[2]
 
 wonder_woman_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/female/characters/wonder_woman'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/female/characters/wonder_woman'), (None, None, []))[2]
 
 cat_woman_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/female/characters/cat_woman'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/female/characters/cat_woman'), (None, None, []))[2]
 
 black_widow_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/female/characters/black_widow'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/female/characters/black_widow'), (None, None, []))[2]
 
 
 
 # ? MALE CHARACTERS
 ryan_reynolds_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/male/characters/ryan'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/male/characters/ryan'), (None, None, []))[2]
 
 ironman_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/male/characters/ironman'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/male/characters/ironman'), (None, None, []))[2]
 
 batman_image_filenames = next(os.walk(
-    'src/common_api_server/client/dist/images/playpal_images/playpal_users/male/characters/batman'), (None, None, []))[2]
+    'src/fruit_castle/client/dist/images/playpal_images/playpal_users/male/characters/batman'), (None, None, []))[2]
 
 
 valid_email_regex = re.compile(

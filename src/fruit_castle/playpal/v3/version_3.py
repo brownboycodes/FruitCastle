@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, render_template, request
 from .v3_user_route import user_v3
-from src.common_api_server.playpal.utilities import get_json_data, json_token_validifier
+from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 
 v3 = Blueprint('v3', __name__, static_url_path='/dist',
                static_folder='../../client/dist', template_folder='client', url_prefix='/v3')
