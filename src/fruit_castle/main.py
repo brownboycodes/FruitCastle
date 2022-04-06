@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, make_response, render_template
 from werkzeug.exceptions import HTTPException
 import json
-
+from flask_compress import Compress
 from flask_socketio import SocketIO
 from flask_cors import CORS
 from .playpal.playpal import playpal
@@ -11,9 +11,15 @@ app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
 app.register_blueprint(playpal)
 
+
+#? setting COMPRESSION_ALGORITHM to GZIP at default COMPRESSION_LEVEL 6
+app.config["COMPRESS_ALGORITHM"] = ['gzip', 'br', 'deflate']
+compress = Compress()
+#? enabling CORS
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
-
+#? enabling compression GLOBALLY
+compress.init_app(app)
 
 def get_json_data(json_file_path):
     json_file = open(json_file_path, "r")
