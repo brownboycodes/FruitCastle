@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from datetime import datetime, timezone
 import random
 from uuid import uuid4
-from src.common_api_server.playpal.utilities import get_json_data, json_token_validifier
+from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 from .qr_code_interpretter import qr_code_interpretter
 
 v2 = Blueprint('v2', __name__, static_url_path='/dist',

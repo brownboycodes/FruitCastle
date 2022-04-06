@@ -2,7 +2,7 @@ Last updated: April 05, 2022
 
 <br>
 
-> The app [PlayPal](https://github.com/brownboycodes/PlayPal) © 2022 and it's backend server [Common API Server](https://commonapiserver.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
+> The app [PlayPal](https://github.com/brownboycodes/PlayPal) © 2022 and it's backend server [Fruit Castle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
 > 
 > Since there isn't any database connected to the backend servers the feature of truly creating new PlayPal accounts and using them to login is unavailable. The current PlayPal can be described as a demo-version/prototype of what the actual product might be/behave like. 
 > 

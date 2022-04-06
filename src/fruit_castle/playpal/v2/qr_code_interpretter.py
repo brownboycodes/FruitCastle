@@ -5,7 +5,7 @@ import random
 import qrcode
 # from qrcode.image.pure import PymagingImage
 # import qrcode.image.svg
-from src.common_api_server.playpal.utilities import get_json_data, json_token_validifier
+from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 
 qr_code_interpretter = Blueprint('qr_code_interpretter', __name__, static_url_path='/dist',
                                  static_folder='../../client/dist', template_folder='client', url_prefix='/qr-code-interpretter')
@@ -35,7 +35,7 @@ def get_random_qr_code():
         print(type(img))
 
         img.save(
-            'src/common_api_server/client/dist/images/playpal_images/qr_codes/random-qr-code.png')
+            'src/fruit_castle/client/dist/images/playpal_images/qr_codes/random-qr-code.png')
         return render_template('qr_code.html', qr_code='random-qr-code.png')
 
 
@@ -55,7 +55,7 @@ def get_brand_qr_code(brand_name):
             print(type(img))
 
             img.save(
-                f'src/common_api_server/client/dist/images/playpal_images/qr_codes/{brand_name}.png')
+                f'src/fruit_castle/client/dist/images/playpal_images/qr_codes/{brand_name}.png')
             return render_template('qr_code.html', qr_code=f'{brand_name}.png')
         else:
             return jsonify({'error': 'brand not found'})

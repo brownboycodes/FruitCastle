@@ -1,7 +1,7 @@
-from src.common_api_server.playpal.v3.v3_user_route import get_avatar, get_female_character_avatar, get_male_character_avatar, male_characters, female_characters
-from src.common_api_server.main import socketio
+from src.fruit_castle.playpal.v3.v3_user_route import get_avatar, get_female_character_avatar, get_male_character_avatar, male_characters, female_characters
+from src.fruit_castle.main import socketio
 from flask_socketio import emit
-from src.common_api_server.playpal.utilities import decode_json_token, get_json_data
+from src.fruit_castle.playpal.utilities import decode_json_token, get_json_data
 
 
 @socketio.on('username request', namespace='/playpal/v3')
