@@ -40,8 +40,8 @@ def playpal_v2_execute_transaction():
     if request.method == 'GET':
         return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-
-        token_status = json_token_validifier(request.json['hash'])
+        token_status = json_token_validifier(request.headers["Authorization"])
+        # token_status = json_token_validifier(request.json['hash'])
         print(token_status)
         if token_status != "invalid":
             transaction_receipt = request.json['transactionReceipt']
