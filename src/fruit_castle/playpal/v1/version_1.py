@@ -1,6 +1,6 @@
 import random
 
-from flask import Blueprint, jsonify, send_from_directory, request
+from flask import Blueprint, jsonify, make_response, send_from_directory, request
 from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 
 from .user_route import user
@@ -19,10 +19,10 @@ def playpal_v1():
 
 @v1.route("/all-data", methods=['POST', 'GET'])
 def playpal_v1_all_data():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a POST request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data("src/data/users.json")
             return jsonify(retrieved_file_data)
@@ -32,10 +32,10 @@ def playpal_v1_all_data():
 
 @v1.route("/all-users", methods=['POST', 'GET'])
 def playpal_v1_all_users():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a GET request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data(
                 "src/data/playpal/local_test_user_data.json")
@@ -49,10 +49,10 @@ def playpal_v1_all_users():
 
 @v1.route("/all-transactions", methods=['POST', 'GET'])
 def playpal_v1_all_transactions():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a POST request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data(
                 "src/data/playpal/transactions.json")
@@ -65,10 +65,10 @@ def playpal_v1_all_transactions():
 
 @v1.route("/all-contacts", methods=['POST', 'GET'])
 def playpal_v1_all_contacts():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a POST request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data(
                 "src/data/playpal/local_contacts.json")
@@ -81,10 +81,10 @@ def playpal_v1_all_contacts():
 
 @v1.route("/available-cards", methods=['POST', 'GET'])
 def playpal_v1_available_cards():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a POST request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data(
                 "src/data/playpal/card_data.json")
@@ -99,4 +99,3 @@ def playpal_v1_available_cards():
 '''@v1.route('/docs')
 def playpal_v1_docs():
     return send_from_directory("../docs/playpal/v1", "playpal_v1_wiki.md")'''
-

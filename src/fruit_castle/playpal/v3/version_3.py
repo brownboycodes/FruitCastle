@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, render_template, request
+from flask import Blueprint, jsonify, make_response, request
 from .v3_user_route import user_v3
 from src.fruit_castle.playpal.utilities import get_json_data, json_token_validifier
 
@@ -17,10 +17,10 @@ def test_socket():
 
 @v3.route("/all-contacts", methods=['POST', 'GET'])
 def playpal_v3_all_contacts():
-    if request.method == 'GET':
-        return jsonify({"error": "this is a GET request"})
     if request.method == 'POST':
-        token_status = json_token_validifier(request.json['hash'])
+        return make_response(jsonify({"error": "this is a POST request"}), 403)
+    if request.method == 'GET':
+        token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
 
             users_wallet_address = [
@@ -37,10 +37,9 @@ def playpal_v3_all_contacts():
         else:
             return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
+
 """
 @v3.route("/active-socket")
 def test_active_socket():
     return render_template('test_socket.html')
 """
-
-

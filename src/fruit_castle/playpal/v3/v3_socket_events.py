@@ -5,10 +5,10 @@ from src.fruit_castle.playpal.utilities import decode_json_token, get_json_data
 
 
 @socketio.on('username request', namespace='/playpal/v3')
-def username_requested(username, hash):
+def username_requested(username, authorization_token):
     username_status = False
     profile_pic = 'NONE'
-    decoded_token = decode_json_token(hash)
+    decoded_token = decode_json_token(authorization_token)
     if 'error' not in "".join(decoded_token.keys()).lower():
         retrieved_file_data = get_json_data(
             "src/data/playpal/local_test_user_data.json")['users']
