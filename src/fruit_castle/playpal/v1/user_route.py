@@ -1,5 +1,5 @@
 import re
-from flask import Blueprint, jsonify, render_template, request
+from flask import Blueprint, jsonify, make_response, render_template, request
 from datetime import datetime, timedelta, timezone
 import random
 
@@ -20,7 +20,6 @@ def get_avatar(gender):
             male_image_filenames)
 
 
-
 # ? PURPOSE: to allow an already logged in user to access their account if they have a valid token
 
 
@@ -30,8 +29,8 @@ def playpal_v1_get_user_by_id(user_id):
     if request.method == 'GET':
         login_response = {"error": "this is a GET request"}
     if request.method == 'POST':
-        received_hash = request.json['hash']
-        token_status = json_token_validifier(received_hash)
+        received_authorization_token = request.headers["Authorization"]
+        token_status = json_token_validifier(received_authorization_token)
         if token_status != "invalid":
             if token_status['userId'] == user_id:
                 retrieved_file_data = get_json_data(
@@ -40,7 +39,7 @@ def playpal_v1_get_user_by_id(user_id):
                     x for x in retrieved_file_data if x['id'] == user_id]
                 if len(filtered_data) != 0:
                     filtered_data[0]['avatar'] = get_avatar(
-                            filtered_data[0]['gender'])
+                        filtered_data[0]['gender'])
                     login_response = {'user': filtered_data[0]}
                 else:
                     login_response = {'authenticationError': "user not found"}
@@ -69,14 +68,15 @@ def playpal_v1_user_login():
                 x for x in retrieved_file_data if x['email'] == username_or_email]
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
-                    successful_hash = jwt.encode(
+                    successful_authorization_token = jwt.encode(
                         {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
                     filtered_data[0]['avatar'] = get_avatar(
-                            filtered_data[0]['gender'])
+                        filtered_data[0]['gender'])
                     login_response = {
-                        'hash': successful_hash, 'user': filtered_data[0]}
+                        'authorization_token': successful_authorization_token, 'user': filtered_data[0]}
                 else:
-                    login_response = {'authenticationError': "incorrect password"}
+                    login_response = {
+                        'authenticationError': "incorrect password"}
             else:
                 login_response = {
                     'authenticationError': "no account found with the email address provided"}
@@ -85,14 +85,15 @@ def playpal_v1_user_login():
                 x for x in retrieved_file_data if x['username'] == username_or_email]
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
-                    successful_hash = jwt.encode(
+                    successful_authorization_token = jwt.encode(
                         {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
                     filtered_data[0]['avatar'] = get_avatar(
-                            filtered_data[0]['gender'])
+                        filtered_data[0]['gender'])
                     login_response = {
-                        'hash': successful_hash, 'user': filtered_data[0]}
+                        'authorization_token': successful_authorization_token, 'user': filtered_data[0]}
                 else:
-                    login_response = {'authenticationError': "incorrect password"}
+                    login_response = {
+                        'authenticationError': "incorrect password"}
             else:
                 login_response = {
                     'authenticationError': "no account found with the username provided"}
@@ -123,14 +124,15 @@ def playpal_v1_user_registration():
             related_bank_account = [
                 y for y in filtered_data[0]['bankDetails'] if y['accountNumber'] == bank_account]
             if len(related_bank_account) != 0:
-                successful_hash = jwt.encode(
+                successful_authorization_token = jwt.encode(
                     {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
                 del filtered_data[0]['username']
                 del filtered_data[0]['avatar']
                 login_response = {
-                    'hash': successful_hash, 'user': filtered_data[0]}
+                    'authorization_token': successful_authorization_token, 'user': filtered_data[0]}
             else:
-                login_response = {'authenticationError': "details could not be verified"}
+                login_response = {
+                    'authenticationError': "details could not be verified"}
         else:
             login_response = {
                 'authenticationError': "account already exists with the details provided"}
@@ -138,25 +140,25 @@ def playpal_v1_user_registration():
         return jsonify(login_response)
 
     if request.method == 'GET':
-        return jsonify({'error': 'this is a GET request'})
+        return make_response(jsonify({'error': 'this is a GET request'}), 403)
 
 # ? END OF USER REGISTRATION
 
 
-@user.route("/verify-login", methods=['POST', 'GET'])
+@user.route("/verify-login", methods=['GET'])
 def playpal_v1_user_verify_login():
-    if request.method == 'POST':
-        encoded_token = request.json['hash']
+    if request.method == 'GET':
+        encoded_token = request.headers["Authorization"]
         decoded_token = decode_json_token(encoded_token)
         return jsonify(decoded_token)
-    if request.method == 'GET':
-        return jsonify({'error': 'this is a GET request'})
+    if request.method == 'POST':
+        return make_response(jsonify({'error': 'this is a POST request'}), 403)
 
 
 @user.route("/verify-username", methods=['POST', 'GET'])
 def playpal_v1_user_verify_username():
     if request.method == 'POST':
-        encoded_token = request.json['hash']
+        encoded_token = request.headers["Authorization"]
         requested_username = request.json['username']
         decoded_token = decode_json_token(encoded_token)
         if 'error' not in "".join(decoded_token.keys()).lower():
@@ -167,7 +169,7 @@ def playpal_v1_user_verify_username():
             if len(filtered_data) != 0:
                 if filtered_data[0]['username'] == requested_username:
                     filtered_data[0]['avatar'] = get_avatar(
-                            filtered_data[0]['gender'])
+                        filtered_data[0]['gender'])
                     return jsonify({"success": f"your username has been set to {requested_username}", 'user': filtered_data[0]})
                 else:
                     return jsonify({'authenticationError': f'the username {requested_username} is not available'})
