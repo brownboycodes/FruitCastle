@@ -1,4 +1,5 @@
 venv
+.env
 temp
 src/fruit_castle/__pycache__
 src/fruit_castle/config

@@ -5,12 +5,12 @@ import json
 from flask_compress import Compress
 from flask_socketio import SocketIO
 from flask_cors import CORS
-from .playpal.playpal import playpal
+from .hadwin.hadwin import hadwin
 
 
 app = Flask(__name__, static_url_path='/dist',
             static_folder='client/dist', template_folder='client')
-app.register_blueprint(playpal)
+app.register_blueprint(hadwin)
 
 
 # ? setting COMPRESSION_ALGORITHM to GZIP at COMPRESSION_LEVEL 7

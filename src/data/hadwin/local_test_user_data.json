@@ -1,0 +1,447 @@
+{
+  "users": [
+    {
+      "id": 2829,
+      "uid": "8712c7de-ca40-45c0-a030-73f6904539b6",
+      "password": "deer",
+      "first_name": "Mary",
+      "last_name": "Kertzmann",
+      "username": "mary.kertzmann",
+      "email": "mary.kertzmann@notillegal.org",
+      "avatar": "https://robohash.org/quiaeaaut.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "+352 109-507-1667",
+      "date_of_birth": "22-06-1983",
+      "employment": {
+        "title": "Regional Legal Specialist",
+        "organisation": "NOT ILLEGAL PVT LTD"
+      },
+      "address": {
+        "city": "Lettybury",
+        "apartment_name": "Strosin Flats",
+        "street_address": "8430 Jill Freeway",
+        "zip_code": "41631",
+        "state": "Missouri",
+        "country": "United States"
+      },
+      "bankDetails": [
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "99293629",
+          "bankBalance": "143398.85",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "19UBFtiqTgcWXkrfPsq1G2NXQYcfPUyqsW"
+    },
+    {
+      "id": 8802,
+      "uid": "761ce065-75ff-4de6-ae70-daf969261015",
+      "password": "parrot",
+      "first_name": "Rusty",
+      "last_name": "Abshire",
+      "username": "rusty.abshire",
+      "email": "rusty.abshire@unfailedstartup.io",
+      "avatar": "https://robohash.org/doloreipsamest.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+972 1-192-223-4482",
+      "date_of_birth": "28-04-1995",
+      "employment": {
+        "title": "Product Manager",
+        "organisation": "Unfailed Startup"
+      },
+      "address": {
+        "city": "Krajciktown",
+        "apartment_name": "Krysten Junctions",
+        "street_address": "40371 Astrid Falls",
+        "zip_code": "54833",
+        "state": "Ohio",
+        "country": "United States"
+      },
+      "bankDetails": [
+        {
+          "bankName": "CITI BANK",
+          "accountNumber": "19285107",
+          "bankBalance": "27206.81",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BARCLAYS",
+          "accountNumber": "21664761",
+          "bankBalance": "17911",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "1KYq2otLhqiJtmmz8YuCojUWFHjx21igP8"
+    },
+    {
+      "id": 1887,
+      "uid": "89e8d7cc-c150-4237-b6c9-5604b339a1bb",
+      "password": "tiger",
+      "first_name": "Dante",
+      "last_name": "Vandervort",
+      "username": "dante.vandervort",
+      "email": "dante.vandervort@junkstuff.net",
+      "avatar": "https://robohash.org/voluptatemquiaccusantium.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+1-284 1-556-962-9770",
+      "date_of_birth": "31-12-1983",
+      "employment": {
+        "title": "District Sales Director",
+        "organisation": "Junk Stuff"
+      },
+      "address": {
+        "city": "Bernierbury",
+        "apartment_name": "Hung Street",
+        "street_address": "473 Rasheeda Lane",
+        "zip_code": "88100",
+        "state": "Colorado",
+        "country": "United States"
+      },
+      "bankDetails": [
+        {
+          "bankName": "WELLS FARGO",
+          "accountNumber": "67767567",
+          "bankBalance": "19781",
+          "currency": "USD"
+        },
+        {
+          "bankName": "STANDARD CHARTERED",
+          "accountNumber": "04295132",
+          "bankBalance": "26300.78",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "1HTCJPQXnZyU6SeC3fQrN8KTePCsHx9XxA"
+    },
+    {
+      "id": 3477,
+      "uid": "b2ed0b98-a6d7-4fe5-b8be-e8ff971218e7",
+      "password": "chicken",
+      "first_name": "Damion",
+      "last_name": "Jerde",
+      "username": "damion.jerde",
+      "email": "damion.jerde@costlyhotel.com",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+1 (630) 598-0883",
+      "date_of_birth": "30-07-1968",
+      "employment": {
+        "title": "Internal Hospitality Executive",
+        "organisation": "COSTLY GROUP OF HOTELS PVT. LTD."
+      },
+      "address": {
+        "city": "Murazikside",
+        "apartment_name": "Nader Plains",
+        "street_address": "471 Swift Causeway",
+        "zip_code": "28604-7597",
+        "state": "Montana",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "64045463",
+          "bankBalance": "17713.60",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "42203582",
+          "bankBalance": "47534",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189VSAfPdmAULvTyN4EiGj31gGQgUFwWWh"
+    },
+
+    {
+      "id": 7587,
+      "uid": "b2ed0b98-a6d7-4fe5-b8be-e8ff971218e7",
+      "password": "aSymbol",
+      "first_name": "Bruce",
+      "last_name": "Wayne",
+      "username": "the.batman",
+      "email": "dark.knight@wayneenterprises.com",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "888-766-8686",
+      "date_of_birth": "17-04-1915",
+      "employment": {
+        "title": "CEO",
+        "organisation": "Wayne Enterprises"
+      },
+      "address": {
+        "city": "Gotham City",
+        "apartment_name": "Wayne Manor",
+        "street_address": "1007 Mountain Drive",
+        "zip_code": "60610",
+        "state": "Illinois",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "47911045",
+          "bankBalance": "1771360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "19826115",
+          "bankBalance": "43544",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189VSAfPdmAULvTyN4EiGjoker31gGQgUFSeirousSoWhy"
+    },
+    {
+      "id": 3421,
+      "uid": "b2ed0b98-a6d7-4fe5-iamironman-b8be-e8ff971218e7",
+      "password": "LoveU3000",
+      "first_name": "Tony",
+      "last_name": "Stark",
+      "username": "iamironman",
+      "email": "tonystank@starkindustries.com",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "212-970-4133",
+      "date_of_birth": "29-05-1970",
+      "employment": {
+        "title": "CEO",
+        "organisation": "Stark Industries"
+      },
+      "address": {
+        "city": "Malibu",
+        "apartment_name": "Point Dume",
+        "street_address": "10880 Malibu Point",
+        "zip_code": "90265",
+        "state": "California",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "39753176",
+          "bankBalance": "61771300",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "61428607",
+          "bankBalance": "22475340",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189VSiAmIronfPdmAnULoveTyouN4EiGj3000gGQgUFh"
+    },
+    {
+      "id": 6898,
+      "uid": "b2ed0b98-free-4fe5-b8be-e8fpool218e7",
+      "password": "FirstDatesAreInterviews",
+      "first_name": "Ryan",
+      "last_name": "Reynolds",
+      "username": "freeguy",
+      "email": "deadpool@mcu.finally",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+1-833-377-4323",
+      "date_of_birth": "22-11-1973",
+      "employment": {
+        "title": "Blue Shirt Guy",
+        "organisation": "Bank"
+      },
+      "address": {
+        "city": "Vancouver",
+        "apartment_name": "Hatley Castle",
+        "street_address": " 2005 Sooke Rd",
+        "zip_code": "V9B 5Y2",
+        "state": "British Columbia",
+        "country": "Canada"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "40429859",
+          "bankBalance": "1771360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "53421343",
+          "bankBalance": "4753400",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189freeVSAdeadfPdmAULvTyN4EiGj31guyGQgUFwWWhpool"
+    },
+    {
+      "id": 7426,
+      "uid": "b2ed0b98-free-4fe5-b8be-e8fpool218e7",
+      "password": "red.panda",
+      "first_name": "Meilin",
+      "last_name": "Lee",
+      "username": "InnerBeast",
+      "email": "mei@turning.red",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "+1-873-347-4323",
+      "date_of_birth": "30-06-1989",
+      "employment": {
+        "title": "student",
+        "organisation": "school"
+      },
+      "address": {
+        "city": "Toronto",
+        "apartment_name": "Richmond Hill",
+        "street_address": "South Central York",
+        "zip_code": "L3T 3M9",
+        "state": "Ontario",
+        "country": "Canada"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "50881774",
+          "bankBalance": "17360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "11045853",
+          "bankBalance": "47400",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189redfPdmAULvTyN4EiGj31turningGQgUFl"
+    },
+    {
+      "id": 5998,
+      "uid": "b2ed0b98-free-4fe5-b8be-e8fpool218e7",
+      "password": "Hippolyta",
+      "first_name": "Diana",
+      "last_name": "Prince",
+      "username": "wonderwoman",
+      "email": "queen@amazon.race",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "+1-873-348-4323",
+      "date_of_birth": "3000 BC",
+      "employment": {
+        "title": "warrior",
+        "organisation": "Amazonians"
+      },
+      "address": {
+        "city": "Themyscira",
+        "apartment_name": "Paradise Island",
+        "street_address": "Amazon Isles",
+        "zip_code": "90069",
+        "state": "DC Universe",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "30646421",
+          "bankBalance": "17360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "39108502",
+          "bankBalance": "47400",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "1wonderfPdmAULvTyN4EiGj31womangGQgUFl"
+    },
+    {
+      "id": 3938,
+      "uid": "b2ed0b98-kyle-4fe5-selina-e8fpool218e7",
+      "password": "storm.coming",
+      "first_name": "Selina",
+      "last_name": "Kyle",
+      "username": "catwoman",
+      "email": "jewelthief@gotham.city",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "888-766-8687",
+      "date_of_birth": "14-03-1940",
+      "employment": {
+        "title": "thief",
+        "organisation": "Gotham City"
+      },
+      "address": {
+        "city": "Gotham City",
+        "apartment_name": "Wayne Manor",
+        "street_address": "1007 Mountain Drive",
+        "zip_code": "60610",
+        "state": "Illinois",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "27772507",
+          "bankBalance": "17360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "36995137",
+          "bankBalance": "47400",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "189catfPdselinavTyN4EiGj31womanGQgUFl"
+    },
+    {
+      "id": 7029,
+      "uid": "b2ed0b98-rushman-4fe5-romanoff-eagent218e7",
+      "password": "blackwidow",
+      "first_name": "Natasha",
+      "last_name": "Romanoff",
+      "username": "daughterOfIvan",
+      "email": "natalierushman@starkindustries.com",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "+1-911-100-999",
+      "date_of_birth": "03-12-1984",
+      "employment": {
+        "title": "Secret Agent",
+        "organisation": "S.H.I.E.L.D"
+      },
+      "address": {
+        "city": "New York City",
+        "apartment_name": "S.H.I.E.L.D. Headquarters",
+        "street_address": "219 West 47th Street",
+        "zip_code": "10036",
+        "state": "New York",
+        "country": "United States"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "36841177",
+          "bankBalance": "100360",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "10783270",
+          "bankBalance": "4700400",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "7029blackfPdmAULvTyN4EiGj31widowGQgUFlroman"
+    }
+  ]
+}
