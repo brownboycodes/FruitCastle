@@ -47,7 +47,7 @@ To test the server in `dev mode` 👨‍💻, create a file, for example- `run_d
 
 ```python
 from src.fruit_castle.main import app, socketio
-from src.fruit_castle.playpal.v3.v3_socket_events import *
+from src.fruit_castle.hadwin.v3.v3_socket_events import *
 
 
 if __name__ == "__main__":
