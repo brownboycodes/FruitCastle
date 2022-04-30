@@ -1,6 +1,6 @@
-# Fruit Castle :apple::tangerine::grapes::watermelon::pineapple::european_castle:
+# FruitCastle :apple::tangerine::grapes::watermelon::pineapple::european_castle:
 
-**Fruit Castle** is a web application built with Flask and Python intended to act as a **common Backend Server** for hosting API endpoints and its corresponding data that is intended for being used by various multiple cross-platform and web apps.
+**FruitCastle** is a web application built with Flask and Python intended to act as a **common Backend Server** for hosting API endpoints and its corresponding data that is intended for being used by various multiple cross-platform and web apps.
 
 ## View deployed app  🚀🎉🎊
 
@@ -53,9 +53,12 @@ from src.fruit_castle.hadwin.v3.v3_socket_events import *
 if __name__ == "__main__":
     app.config.update(
         TESTING=True,
-        SECRET_KEY='123',
         ENV='development',
     )
+    if app.config['ENV'] == 'development':
+        from dotenv import load_dotenv
+        load_dotenv()
+    app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 
     socketio.run(app, host="0.0.0.0", port=5000, debug=True)
 ```
@@ -70,4 +73,4 @@ py run_dev_mode.py
 
 ---
 
-> [Fruit Castle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
+> [FruitCastle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
