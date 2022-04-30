@@ -39,7 +39,7 @@ def get_json_data(json_file_path):
 def home():
     # return render_template("index.html")
     about_fruit_castle = {
-        'project_name': 'Fruit Castle',
+        'project_name': 'FruitCastle',
         'version': '3.0.0',
         'description': 'backend server',
         'dependencies': ['python', 'flask', 'socket.IO', 'gzip'],

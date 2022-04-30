@@ -4,7 +4,7 @@ Last updated: April 28, 2022
 
 <br>
 
-1. The app [HADWIN](https://github.com/brownboycodes/HADWIN) © 2022 and it's backend server [Fruit Castle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
+1. The app [HADWIN](https://github.com/brownboycodes/HADWIN) © 2022 and it's backend server [FruitCastle](https://fruitcastle.herokuapp.com/) © 2022 was developed by Nabhodipta Garai and is owned by him.
 
 2. HADWIN is not a fund transfer platform. The current HADWIN can be described as the demo version/prototype of what the actual product might be/behave like, at best it can be also described as a simulator, meaning it is to be used for mocking payments/fund-transfer-requests. The app has been developed it on display it on the portfolio of the app developer and the UI designers who have been mentioned in this document.
 
