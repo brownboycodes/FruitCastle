@@ -34,7 +34,7 @@ def hadwin_v1_get_user_by_id(user_id):
         if token_status != "invalid":
             if token_status['userId'] == user_id:
                 retrieved_file_data = get_json_data(
-                    "src/data/hadwin/local_test_user_data.json")['users']
+                    "src/data/hadwin/user_data.json")['users']
                 filtered_data = [
                     x for x in retrieved_file_data if x['id'] == user_id]
                 if len(filtered_data) != 0:
@@ -62,7 +62,7 @@ def hadwin_v1_user_login():
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
         if re.fullmatch(valid_email_regex, username_or_email):
             filtered_data = [
                 x for x in retrieved_file_data if x['email'] == username_or_email]
@@ -116,7 +116,7 @@ def hadwin_v1_user_registration():
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
 
         filtered_data = [
             x for x in retrieved_file_data if x['email'] == emailId]
@@ -163,7 +163,7 @@ def hadwin_v1_user_verify_username():
         decoded_token = decode_json_token(encoded_token)
         if 'error' not in "".join(decoded_token.keys()).lower():
             retrieved_file_data = get_json_data(
-                "src/data/hadwin/local_test_user_data.json")['users']
+                "src/data/hadwin/user_data.json")['users']
             filtered_data = [
                 x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
             if len(filtered_data) != 0:

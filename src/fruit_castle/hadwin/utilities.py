@@ -40,6 +40,9 @@ black_widow_image_filenames = next(os.walk(
 ryan_reynolds_image_filenames = next(os.walk(
     'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/male/characters/ryan'), (None, None, []))[2]
 
+logan_image_filenames = next(os.walk(
+    'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/male/characters/logan'), (None, None, []))[2]
+
 ironman_image_filenames = next(os.walk(
     'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/male/characters/ironman'), (None, None, []))[2]
 
@@ -50,7 +53,7 @@ batman_image_filenames = next(os.walk(
 valid_email_regex = re.compile(
     r"([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|\[[\t -Z^-~]*])")
 
-# secret_key_jwt = "3v9fIXKwsOn9bp4vI2amfLrSx3wJ2gF8STMtEJLjM5kPVXdWFoTPOiABiNhuGvLf0Y2hoaJm7LuCUTH5mKTayjm2338mzGgmpUUwN49IhrH9Kb4Htrb6TkPjWzeMz1RzKh8yhD2BmeuTrb2st2KQfisQs2eIs7LKQu37W68bfhVG0ryecIO0q7JK4Q1fewFHRP0RI2p0"
+
 
 
 secret_key_jwt = os.environ.get('HADWIN_SECRET_KEY')

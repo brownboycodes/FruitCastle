@@ -242,8 +242,8 @@
       "id": 6898,
       "uid": "b2ed0b98-free-4fe5-b8be-e8fpool218e7",
       "password": "FirstDatesAreInterviews",
-      "first_name": "Ryan",
-      "last_name": "Reynolds",
+      "first_name": "Van",
+      "last_name": "Wilder",
       "username": "freeguy",
       "email": "deadpool@mcu.finally",
       "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
@@ -280,12 +280,53 @@
       "walletAddress": "189freeVSAdeadfPdmAULvTyN4EiGj31guyGQgUFwWWhpool"
     },
     {
+      "id": 4488,
+      "uid": "dfa5e22b-f2b7-4106-9d79-a31762c21c82",
+      "password": "ryansUglySweater",
+      "first_name": "Van",
+      "last_name": "Helsing",
+      "username": "logan",
+      "email": "wolverine@xmen.marvel",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+1-866-699-7369",
+      "date_of_birth": "01-01-1832",
+      "employment": {
+        "title": "veteran",
+        "organisation": "X-Men"
+      },
+      "address": {
+        "city": "Westchester County",
+        "apartment_name": "X-Mansion",
+        "street_address": "1407 Graymalkin Lane, Salem Center",
+        "zip_code": "10591",
+        "state": "New York",
+        "country": "USA"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "23926044",
+          "bankBalance": "3686809",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "20166891",
+          "bankBalance": "2784943",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "micVvjVMhGqorFgcJyKtJMKo2FyvKhGUzD"
+    },
+    {
       "id": 7426,
-      "uid": "b2ed0b98-free-4fe5-b8be-e8fpool218e7",
-      "password": "red.panda",
+      "uid": "b2ed0b98-free-4fe5-b8be-e8ftown218e7",
+      "password": "4town",
       "first_name": "Meilin",
       "last_name": "Lee",
-      "username": "InnerBeast",
+      "username": "red.panda",
       "email": "mei@turning.red",
       "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
       "gender": "Female",
@@ -349,13 +390,13 @@
         {
           "bankName": "CHASE",
           "accountNumber": "30646421",
-          "bankBalance": "17360",
+          "bankBalance": "1700360",
           "currency": "USD"
         },
         {
           "bankName": "BANK OF AMERICA",
           "accountNumber": "39108502",
-          "bankBalance": "47400",
+          "bankBalance": "4740000",
           "currency": "USD"
         }
       ],
@@ -364,7 +405,7 @@
     {
       "id": 3938,
       "uid": "b2ed0b98-kyle-4fe5-selina-e8fpool218e7",
-      "password": "storm.coming",
+      "password": "notTrustworthy",
       "first_name": "Selina",
       "last_name": "Kyle",
       "username": "catwoman",
@@ -405,10 +446,10 @@
     {
       "id": 7029,
       "uid": "b2ed0b98-rushman-4fe5-romanoff-eagent218e7",
-      "password": "blackwidow",
+      "password": "daughterOfIvan",
       "first_name": "Natasha",
       "last_name": "Romanoff",
-      "username": "daughterOfIvan",
+      "username": "blackwidow",
       "email": "natalierushman@starkindustries.com",
       "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
       "gender": "Female",
@@ -437,7 +478,7 @@
         {
           "bankName": "BANK OF AMERICA",
           "accountNumber": "10783270",
-          "bankBalance": "4700400",
+          "bankBalance": "47000400",
           "currency": "USD"
         }
       ],

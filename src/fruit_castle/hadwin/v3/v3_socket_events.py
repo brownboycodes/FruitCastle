@@ -11,7 +11,7 @@ def username_requested(username, authorization_token):
     decoded_token = decode_json_token(authorization_token)
     if 'error' not in "".join(decoded_token.keys()).lower():
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
         filtered_data = [
             x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
         if len(filtered_data) != 0:
