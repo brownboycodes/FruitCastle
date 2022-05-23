@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, make_response, request
+from flask import Blueprint, jsonify, make_response, render_template, request
 from .v3_user_route import user_v3
 from src.fruit_castle.hadwin.utilities import get_json_data, json_token_validifier
 
@@ -25,7 +25,7 @@ def hadwin_v3_all_contacts():
 
             users_wallet_address = [
                 x for x in get_json_data(
-                    "src/data/hadwin/local_test_user_data.json")['users'] if x['id'] == token_status['userId']][0]['walletAddress']
+                    "src/data/hadwin/user_data.json")['users'] if x['id'] == token_status['userId']][0]['walletAddress']
 
             retrieved_file_data = get_json_data(
                 "src/data/hadwin/local_contacts.json")

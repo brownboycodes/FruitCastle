@@ -8,7 +8,7 @@ user_v3 = Blueprint('user', __name__, static_url_path='/dist',
 
 
 female_characters = [7426, 5998, 3938, 7029]
-male_characters = [7587, 3421, 6898]
+male_characters = [7587, 3421, 6898, 4488]
 
 
 def get_avatar(gender):
@@ -28,6 +28,8 @@ def get_male_character_avatar(id):
         avatar_path += '/ironman/'+random.choice(ironman_image_filenames)
     elif id == 6898:
         avatar_path += '/ryan/'+random.choice(ryan_reynolds_image_filenames)
+    elif id == 4488:
+        avatar_path += '/logan/'+random.choice(logan_image_filenames)
     return avatar_path
 
 
@@ -62,7 +64,7 @@ def hadwin_v3_get_user_by_id(user_id):
         if token_status != "invalid":
             if token_status['userId'] == user_id:
                 retrieved_file_data = get_json_data(
-                    "src/data/hadwin/local_test_user_data.json")['users']
+                    "src/data/hadwin/user_data.json")['users']
                 filtered_data = [
                     x for x in retrieved_file_data if x['id'] == user_id]
                 if len(filtered_data) != 0:
@@ -97,7 +99,7 @@ def hadwin_v3_user_login():
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
         if re.fullmatch(valid_email_regex, username_or_email):
             filtered_data = [
                 x for x in retrieved_file_data if x['email'] == username_or_email]
@@ -160,7 +162,7 @@ def hadwin_v3_user_verify_username():
         decoded_token = decode_json_token(encoded_token)
         if 'error' not in "".join(decoded_token.keys()).lower():
             retrieved_file_data = get_json_data(
-                "src/data/hadwin/local_test_user_data.json")['users']
+                "src/data/hadwin/user_data.json")['users']
             filtered_data = [
                 x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
             if len(filtered_data) != 0:

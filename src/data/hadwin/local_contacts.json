@@ -122,12 +122,20 @@
       "walletAddress": "189VSiAmIronfPdmAnULoveTyouN4EiGj3000gGQgUFh"
     },
     {
-      "name": "Ryan Reynolds",
+      "name": "Van Wilder",
       "avatar": "wp9665297.jpg",
       "emailAddress": "deadpool@mcu.finally",
       "phoneNumber": "+1-980-810-8129",
       "communicationAddress": "Hatley Castle, 2005 Sooke Rd, Vancouver, British Columbia V9B 5Y2, Canada",
       "walletAddress": "189freeVSAdeadfPdmAULvTyN4EiGj31guyGQgUFwWWhpool"
+    },
+    {
+      "name": "Van Helsing",
+      "avatar": "the_wolverine_movie_2013.jpg",
+      "emailAddress": "wolverine@xmen.marvel",
+      "phoneNumber": "+1-866-699-7369",
+      "communicationAddress": "X-Mansion, 1407 Graymalkin Lane, Salem Center,Westchester County, New York 10591, USA",
+      "walletAddress": "micVvjVMhGqorFgcJyKtJMKo2FyvKhGUzD"
     },
     {
       "name": "Meilin Lee",

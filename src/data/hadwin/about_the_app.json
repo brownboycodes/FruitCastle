@@ -137,50 +137,7 @@
       ]
     },
 
-    {
-      "name": "Eslam Mohamed",
-      "header": "UI elements",
-      "avatar": "eslam-mohamed.jpg",
-      "website": "https://eslam.design/",
-      "socials": [
-        {
-          "title": "Instagram",
-          "url": "https://www.instagram.com/eslammo7amed/",
-          "avatar": "ruslan_babkin/instagram.png"
-        },
-        {
-          "title": "Behance",
-          "url": "https://www.behance.net/eslammohamedph",
-          "avatar": "ruslan_babkin/behance.png"
-        },
-        {
-          "title": "Dribbble",
-          "url": "https://dribbble.com/eslammo7amed",
-          "avatar": "ruslan_babkin/dribbble.png"
-        },
-
-        {
-          "title": "Facebook",
-          "url": "https://www.facebook.com/eslammohamedph",
-          "avatar": "ruslan_babkin/facebook.png"
-        },
-        {
-          "title": "Tumblr",
-          "url": "https://eslammohamedph.tumblr.com/",
-          "avatar": "ruslan_babkin/tumblr.png"
-        },
-        {
-          "title": "Pinterest",
-          "url": "https://www.pinterest.com.au/eslammo7amed/_created/",
-          "avatar": "ruslan_babkin/pinterest.png"
-        },
-        {
-          "title": "Icon Design",
-          "url": "https://dribbble.com/shots/16028504-Paypal",
-          "avatar": "freepik/graphic-design.png"
-        }
-      ]
-    },
+    
     {
       "name": "Mohamed Chahin",
       "header": "UI elements",

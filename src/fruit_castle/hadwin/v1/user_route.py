@@ -1,5 +1,6 @@
 import re
-from flask import Blueprint, jsonify, make_response, render_template, request
+from flask import Blueprint, jsonify, make_response, request
+from src.fruit_castle.hadwin.v3.v3_user_route import get_avatar, get_female_character_avatar, get_male_character_avatar, male_characters, female_characters
 from datetime import datetime, timedelta, timezone
 import random
 
@@ -34,7 +35,7 @@ def hadwin_v1_get_user_by_id(user_id):
         if token_status != "invalid":
             if token_status['userId'] == user_id:
                 retrieved_file_data = get_json_data(
-                    "src/data/hadwin/local_test_user_data.json")['users']
+                    "src/data/hadwin/user_data.json")['users']
                 filtered_data = [
                     x for x in retrieved_file_data if x['id'] == user_id]
                 if len(filtered_data) != 0:
@@ -62,7 +63,7 @@ def hadwin_v1_user_login():
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
         if re.fullmatch(valid_email_regex, username_or_email):
             filtered_data = [
                 x for x in retrieved_file_data if x['email'] == username_or_email]
@@ -116,7 +117,7 @@ def hadwin_v1_user_registration():
         entered_password = request.json['password']
 
         retrieved_file_data = get_json_data(
-            "src/data/hadwin/local_test_user_data.json")['users']
+            "src/data/hadwin/user_data.json")['users']
 
         filtered_data = [
             x for x in retrieved_file_data if x['email'] == emailId]
@@ -127,7 +128,17 @@ def hadwin_v1_user_registration():
                 successful_authorization_token = jwt.encode(
                     {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
                 del filtered_data[0]['username']
-                del filtered_data[0]['avatar']
+                # del filtered_data[0]['avatar']
+                if filtered_data[0]['id'] in male_characters:
+                    profile_pic = get_male_character_avatar(
+                        filtered_data[0]['id'])
+                elif filtered_data[0]['id'] in female_characters:
+                    profile_pic = get_female_character_avatar(
+                        filtered_data[0]['id'])
+                else:
+                    profile_pic = get_avatar(
+                        filtered_data[0]['gender'])
+                filtered_data[0]['avatar']=profile_pic
                 login_response = {
                     'authorization_token': successful_authorization_token, 'user': filtered_data[0]}
             else:
@@ -163,7 +174,7 @@ def hadwin_v1_user_verify_username():
         decoded_token = decode_json_token(encoded_token)
         if 'error' not in "".join(decoded_token.keys()).lower():
             retrieved_file_data = get_json_data(
-                "src/data/hadwin/local_test_user_data.json")['users']
+                "src/data/hadwin/user_data.json")['users']
             filtered_data = [
                 x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
             if len(filtered_data) != 0:

@@ -16,7 +16,7 @@ def hadwin_v1():
         "error": "please mention exactly what you want from version 1 of the hadwin API"}
     return jsonify(response_for_route)
 
-
+'''
 @v1.route("/all-data", methods=['POST', 'GET'])
 def hadwin_v1_all_data():
     if request.method == 'POST':
@@ -29,7 +29,7 @@ def hadwin_v1_all_data():
         else:
             return jsonify({'apiAuthorizationError': "your session has expired please login again"})
 
-
+'''
 @v1.route("/all-users", methods=['POST', 'GET'])
 def hadwin_v1_all_users():
     if request.method == 'POST':
@@ -38,7 +38,7 @@ def hadwin_v1_all_users():
         token_status = json_token_validifier(request.headers["Authorization"])
         if token_status != "invalid":
             retrieved_file_data = get_json_data(
-                "src/data/hadwin/local_test_user_data.json")
+                "src/data/hadwin/user_data.json")
             return jsonify(retrieved_file_data)
         else:
             return jsonify({'apiAuthorizationError': "your session has expired please login again"})

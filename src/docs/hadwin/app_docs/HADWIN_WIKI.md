@@ -32,11 +32,12 @@ The required details of all the available accounts to login to are listed below 
 | Damion Jerde     | damion.jerde     | damion.jerde@costlyhotel.com       | chicken                 |
 | Bruce Wayne      | the.batman       | dark.knight@wayneenterprises.com   | aSymbol                 |
 | Tony Stark       | iamironman       | tonystank@starkindustries.com      | LoveU3000               |
-| Ryan Reynolds    | freeguy          | deadpool@mcu.finally                | FirstDatesAreInterviews |
-| Meilin Lee       | InnerBeast       | mei@turning.red                    | red.panda               |
+| Van Wilder       | freeguy          | deadpool@mcu.finally               | FirstDatesAreInterviews |
+| Van Helsing      | logan            | wolverine@xmen.marvel              | ryansUglySweater        |
+| Meilin Lee       | red.panda        | mei@turning.red                    | 4town                   |
 | Diana Prince     | wonderwoman      | queen@amazon.race                  | Hippolyta               |
-| Selina Kyle      | catwoman         | jewelthief@gotham.city             | storm.coming            |
-| Natasha Romanoff | daughterOfIvan   | natalierushman@starkindustries.com | blackwidow              |
+| Selina Kyle      | catwoman         | jewelthief@gotham.city             | notTrustworthy          |
+| Natasha Romanoff | blackwidow       | natalierushman@starkindustries.com | daughterOfIvan          |
 
 Trying to gain access using details/values other than the ones mentioned above to sign in/login to an existing HADWIN account will result in the server responding with an error of - *"no account found with the email address provided"* or *"no account found with the username provided"*
 
@@ -71,11 +72,12 @@ The required details to register/sign-up with a new HADWIN account are listed be
 | Damion Jerde     | damion.jerde@costlyhotel.com       | 64045463<br /><br />42203582  | damion.jerde     |
 | Bruce Wayne      | dark.knight@wayneenterprises.com   | 47911045<br /><br />19826115  | the.batman       |
 | Tony Stark       | tonystank@starkindustries.com      | 39753176<br /><br />61428607  | iamironman       |
-| Ryan Reynolds    | deadpool@mcu.finally                | 40429859<br /> 53421343       | freeguy          |
-| Meilin Lee       | mei@turning.red                    | 50881774<br /><br /> 11045853 | InnerBeast       |
+| Van Wilder       | deadpool@mcu.finally               | 40429859<br /> 53421343       | freeguy          |
+| Van Helsing      | wolverine@xmen.marvel              | 23926044<br /> 20166891       | logan            |
+| Meilin Lee       | mei@turning.red                    | 50881774<br /><br /> 11045853 | red.panda        |
 | Diana Prince     | queen@amazon.race                  | 30646421<br /><br /> 39108502 | wonderwoman      |
 | Selina Kyle      | jewelthief@gotham.city             | 27772507<br /><br /> 36995137 | catwoman         |
-| Natasha Romanoff | natalierushman@starkindustries.com | 36841177<br /><br /> 10783270 | daughterOfIvan   |
+| Natasha Romanoff | natalierushman@starkindustries.com | 36841177<br /><br /> 10783270 | blackwidow       |
 
 Trying to gain access using details/values other than the ones mentioned above to sign up/register a new user will result in the server responding with an error of - *"account already exists with the details provided"*
 
