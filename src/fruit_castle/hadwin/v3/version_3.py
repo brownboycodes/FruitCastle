@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, make_response, request
+from flask import Blueprint, jsonify, make_response, render_template, request
 from .v3_user_route import user_v3
 from src.fruit_castle.hadwin.utilities import get_json_data, json_token_validifier
 

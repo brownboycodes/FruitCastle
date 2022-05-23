@@ -7,7 +7,7 @@ from src.fruit_castle.hadwin.utilities import decode_json_token, get_json_data
 @socketio.on('username request', namespace='/hadwin/v3')
 def username_requested(username, authorization_token):
     username_status = False
-    profile_pic = 'NONE'
+    # profile_pic = 'NONE'
     decoded_token = decode_json_token(authorization_token)
     if 'error' not in "".join(decoded_token.keys()).lower():
         retrieved_file_data = get_json_data(
@@ -16,6 +16,7 @@ def username_requested(username, authorization_token):
             x for x in retrieved_file_data if x['id'] == decoded_token['userId']]
         if len(filtered_data) != 0:
             if filtered_data[0]['username'] == username:
+                '''
                 if filtered_data[0]['id'] in male_characters:
                     profile_pic = get_male_character_avatar(
                         filtered_data[0]['id'])
@@ -25,10 +26,13 @@ def username_requested(username, authorization_token):
                 else:
                     profile_pic = get_avatar(
                         filtered_data[0]['gender'])
+'''
                 username_status = True
             else:
                 username_status = False
-        emit('username status', (username_status, profile_pic),
+        ''' emit('username status', (username_status, profile_pic),
+             namespace='/hadwin/v3')'''
+        emit('username status', (username_status),
              namespace='/hadwin/v3')
     else:
         emit('error', 'something went wrong', namespace='/hadwin/v3')

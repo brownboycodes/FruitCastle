@@ -1,8 +1,8 @@
 # FruitCastle 🍎🏰
 
-**FruitCastle** is a web application built with Flask and Python intended to act as a **common Backend Server** for hosting data that is intended for being used by various cross-platform and web applications.
+**FruitCastle** is a web application built with Flask and Python intended to act as a common backend service for hosting data that is wiil be used by various cross-platform and web applications.
 
-![FruitCastle banner](./src/fruit_castle/client/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529.png)
+![FruitCastle banner](./src/fruit_castle/client/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png)
 ## View deployed app  🚀🎉🎊
 
 [https://fruitcastle.herokuapp.com/](https://fruitcastle.herokuapp.com/ "Common Backend Service for hosting API and data")
