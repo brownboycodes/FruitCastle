@@ -5,7 +5,7 @@ src/fruit_castle/__pycache__
 src/fruit_castle/config
 src/config/__pycache__
 # src/fruit_castle/client
-
+__pycache__/
 # src/docs
 run_dev_mode.py
 

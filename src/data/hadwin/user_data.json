@@ -321,6 +321,47 @@
       "walletAddress": "micVvjVMhGqorFgcJyKtJMKo2FyvKhGUzD"
     },
     {
+      "id": 6344,
+      "uid": "4d48cb2c-634e-4f2a-ba61-8b82129626ca",
+      "password": "ussButterscotch",
+      "first_name": "Steve",
+      "last_name": "Harrington",
+      "username": "king_steve",
+      "email": "king_steve@hawkins.high",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Male",
+      "phone_number": "+1-888-273-9152",
+      "date_of_birth": "01-05-1966",
+      "employment": {
+        "title": "babysitter",
+        "organisation": "Scoops Troop"
+      },
+      "address": {
+        "city": "Hawkins",
+        "apartment_name": "Harrington House",
+        "street_address": "_",
+        "zip_code": "46032",
+        "state": "Indiana",
+        "country": "USA"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "72389857",
+          "bankBalance": "155557.35",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "91515917",
+          "bankBalance": "326670.40",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "mxKSvDj84GN6yUvTCBoneFsMaQ8DuUjPST"
+    },
+    {
       "id": 7426,
       "uid": "b2ed0b98-free-4fe5-b8be-e8ftown218e7",
       "password": "4town",
@@ -483,6 +524,47 @@
         }
       ],
       "walletAddress": "7029blackfPdmAULvTyN4EiGj31widowGQgUFlroman"
+    },
+    {
+      "id": 2508,
+      "uid": "004b6eb7-a44a-4ab2-948c-00ed3b963408",
+      "password": "eggo",
+      "first_name": "Jane",
+      "last_name": "Hopper",
+      "username": "el",
+      "email": "eleven@hawkins.laboratory",
+      "avatar": "https://robohash.org/ametipsaea.png?size=300x300&set=set1",
+      "gender": "Female",
+      "phone_number": "202-968-6161",
+      "date_of_birth": "01-03-1971",
+      "employment": {
+        "title": "superhero",
+        "organisation": "Project NINA"
+      },
+      "address": {
+        "city": "Hawkins",
+        "apartment_name": "Hoppers Cabin",
+        "street_address": "Sleepy Hollow Farm, Powder Springs",
+        "zip_code": "46032",
+        "state": "Indiana",
+        "country": "USA"
+      },
+
+      "bankDetails": [
+        {
+          "bankName": "CHASE",
+          "accountNumber": "76131209",
+          "bankBalance": "685836.90",
+          "currency": "USD"
+        },
+        {
+          "bankName": "BANK OF AMERICA",
+          "accountNumber": "59840666",
+          "bankBalance": "293930.10",
+          "currency": "USD"
+        }
+      ],
+      "walletAddress": "mtK8n9eo84Edb2R5Zvg7xz3tafGFd6XghB"
     }
   ]
 }
