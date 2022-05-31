@@ -70,7 +70,7 @@ def hadwin_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     filtered_data[0]['avatar'] = get_avatar(
                         filtered_data[0]['gender'])
                     login_response = {
@@ -87,7 +87,7 @@ def hadwin_v1_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     filtered_data[0]['avatar'] = get_avatar(
                         filtered_data[0]['gender'])
                     login_response = {
@@ -126,7 +126,7 @@ def hadwin_v1_user_registration():
                 y for y in filtered_data[0]['bankDetails'] if y['accountNumber'] == bank_account]
             if len(related_bank_account) != 0:
                 successful_authorization_token = jwt.encode(
-                    {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                    {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                 del filtered_data[0]['username']
                 # del filtered_data[0]['avatar']
                 if filtered_data[0]['id'] in male_characters:

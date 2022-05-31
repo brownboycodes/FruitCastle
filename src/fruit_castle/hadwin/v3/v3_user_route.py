@@ -111,7 +111,7 @@ def hadwin_v3_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     if filtered_data[0]['id'] in male_characters:
                         filtered_data[0]['avatar'] = get_male_character_avatar(
                             filtered_data[0]['id'])
@@ -135,7 +135,7 @@ def hadwin_v3_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     if filtered_data[0]['id'] in male_characters:
                         filtered_data[0]['avatar'] = get_male_character_avatar(
                             filtered_data[0]['id'])
