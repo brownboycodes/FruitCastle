@@ -35,6 +35,9 @@ cat_woman_image_filenames = next(os.walk(
 black_widow_image_filenames = next(os.walk(
     'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/female/characters/black_widow'), (None, None, []))[2]
 
+eleven_image_filenames = next(os.walk(
+    'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/female/characters/eleven'), (None, None, []))[2]
+
 
 # ? MALE CHARACTERS
 ryan_reynolds_image_filenames = next(os.walk(
@@ -48,6 +51,9 @@ ironman_image_filenames = next(os.walk(
 
 batman_image_filenames = next(os.walk(
     'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/male/characters/batman'), (None, None, []))[2]
+
+steve_image_filenames = next(os.walk(
+    'src/fruit_castle/client/dist/images/hadwin_images/hadwin_users/male/characters/steve'), (None, None, []))[2]
 
 
 valid_email_regex = re.compile(

@@ -7,8 +7,8 @@ user_v3 = Blueprint('user', __name__, static_url_path='/dist',
                     static_folder='../../client/dist', template_folder='client', url_prefix='/user')
 
 
-female_characters = [7426, 5998, 3938, 7029]
-male_characters = [7587, 3421, 6898, 4488]
+female_characters = [7426, 5998, 3938, 7029, 2508]
+male_characters = [7587, 3421, 6898, 4488, 6344]
 
 
 def get_avatar(gender):
@@ -30,6 +30,8 @@ def get_male_character_avatar(id):
         avatar_path += '/ryan/'+random.choice(ryan_reynolds_image_filenames)
     elif id == 4488:
         avatar_path += '/logan/'+random.choice(logan_image_filenames)
+    elif id == 6344:
+        avatar_path += '/steve/'+random.choice(steve_image_filenames)
     return avatar_path
 
 
@@ -46,6 +48,9 @@ def get_female_character_avatar(id):
     elif id == 7029:
         avatar_path += '/black_widow/' + \
             random.choice(black_widow_image_filenames)
+    elif id == 2508:
+        avatar_path += '/eleven/' + \
+            random.choice(eleven_image_filenames)
     return avatar_path
 
 
@@ -106,7 +111,7 @@ def hadwin_v3_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     if filtered_data[0]['id'] in male_characters:
                         filtered_data[0]['avatar'] = get_male_character_avatar(
                             filtered_data[0]['id'])
@@ -130,7 +135,7 @@ def hadwin_v3_user_login():
             if len(filtered_data) != 0:
                 if entered_password == filtered_data[0]['password']:
                     successful_authorization_token = jwt.encode(
-                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=1)}, secret_key_jwt, algorithm="HS256")
+                        {'userId': filtered_data[0]['id'], 'exp': datetime.now(tz=timezone.utc)+timedelta(hours=3)}, secret_key_jwt, algorithm="HS256")
                     if filtered_data[0]['id'] in male_characters:
                         filtered_data[0]['avatar'] = get_male_character_avatar(
                             filtered_data[0]['id'])
